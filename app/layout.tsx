@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { brand } from "@/lib/site-content";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -19,23 +20,23 @@ const body = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Kopano Intelligence | Operational Intelligence for Growing Organisations",
-    template: "%s | Kopano Intelligence",
+    default: `${brand.name} | ${brand.strapline}`,
+    template: `%s | ${brand.name}`,
   },
   description:
-    "Kopano Intelligence is a Johannesburg-based solo analytics consultancy helping schools, SMEs, service businesses, and digital products build KPI clarity, reporting systems, and operational visibility.",
-  metadataBase: new URL("https://kopano-intelligence.co.za"),
+    "Johannesburg-based solo consultancy for learning analytics dashboards, programme performance reviews, KPI design, and reporting systems for training and skills delivery environments.",
+  metadataBase: new URL(brand.siteUrl),
   openGraph: {
-    title: "Kopano Intelligence",
+    title: brand.name,
     description:
-      "Operational intelligence, KPI design, dashboards, and reporting systems for growing organisations.",
+      "Operational intelligence for learning organisations, training providers, and programme teams.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kopano Intelligence",
+    title: brand.name,
     description:
-      "Operational intelligence for growing organisations across South Africa and beyond.",
+      "Learning operations intelligence for programme managers, academies, and training providers.",
   },
   icons: {
     icon: "/favicon.svg",

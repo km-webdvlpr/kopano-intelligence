@@ -2,82 +2,78 @@
 
 ## Brand Name Options
 
-1. Kopano Intelligence
-   - Strong South African grounding through the name `Kopano`, which signals partnership, coordination, and shared progress.
-   - Professional enough for consulting outreach, while still feeling distinct from generic analytics firms.
-   - Scalable across advisory work, retained reporting, and future products.
+1. Kopano Learning Intelligence
+   - Strong niche clarity and a credible African-grounded feel.
+   - Signals analytics and reporting relevance immediately.
+   - Scales well from solo consultancy to a more established specialist brand.
 
-2. Groundline Analytics
-   - Credible and clean.
-   - Communicates practicality and operational grounding.
-   - Slightly more generic and less regionally distinctive.
+2. Groundline Learning Advisory
+   - Calm and credible.
+   - Suggests practical judgment.
+   - Less distinctive and less explicit about analytics capability.
 
-3. Metsi Advisory
-   - Elegant and African-rooted.
-   - Broad enough for consulting expansion.
-   - Less explicit about analytics and reporting capability.
+3. Motswedi Programme Intelligence
+   - Premium and regionally grounded.
+   - Strong fit for programme reporting and visibility.
+   - Slightly less immediate for first-time buyers.
 
 ## Chosen Brand
 
-`Kopano Intelligence`
+`Kopano Learning Intelligence`
 
-## Core Positioning
+## Niche Positioning
 
-Operational Intelligence for Growing Organisations
+Operational Intelligence for Learning Organisations
 
-This consultancy is positioned as a boutique, business-facing analytics practice that helps organisations move from messy data and unclear reporting toward structured management visibility, credible KPIs, and practical decision support.
+The consultancy is positioned as a specialist reporting and analytics practice for organisations that run learning, training, skills, and programme delivery. It helps leaders move from fragmented administrative reporting toward clearer KPI visibility, learner insight, and decision-ready programme reporting.
 
-## Brand Promise
+## Key Messages
 
-Kopano Intelligence helps growing organisations:
+- Make programme performance visible
+- Turn learner reporting into decision support
+- See where cohorts are progressing, stalling, or dropping off
+- Build KPI clarity for learning and training operations
+- Move beyond spreadsheet-heavy reporting
 
-- make operations visible
-- turn reporting into decision support
-- define KPIs clearly
-- see where workflow performance is breaking
-- move from spreadsheet-heavy reporting toward structured visibility
+## Ideal Client Profile
 
-## What The Brand Is Not
+- training academies
+- skills development organisations
+- NGOs with programme reporting obligations
+- funded youth development programmes
+- private learning providers
+- education operations teams
 
-The brand should not read as:
+Buyer roles:
 
-- a generic agency
-- a startup SaaS product
-- a portfolio site
-- an interview-prep or education brand
-- an academic research profile
+- programme manager
+- academic manager
+- operations lead
+- founder or managing director
+- monitoring and evaluation lead
 
-## Brand Character
+## Tone Direction
 
 - calm
 - strategic
-- grounded
-- premium but accessible
-- concise
-- business-first
-- technically credible
+- practical
+- intelligent
+- commercially aware
+- premium without arrogance
 
 ## Visual Direction
 
-- warm neutrals rather than corporate blue
-- editorial spacing with strong rhythm
-- minimal surfaces with premium texture
-- subtle Afrocentric grounding through tone and naming, not decorative clichés
-- serious consulting clarity with modern product-grade polish
+- warm neutral palette
+- deep charcoal and off-white base
+- muted olive as the main accent
+- editorial spacing and restrained motion
+- polished but not flashy
+- professional, solo-specialist feel rather than agency styling
 
-## Messaging Pillars
+## Why This Positioning Is Stronger Than A Broad Consulting Brand
 
-1. Operational intelligence
-   - Reporting should reveal how work moves, where it stalls, and what needs intervention.
-
-2. KPI clarity
-   - Dashboards fail when definitions are weak. Metric trust is part of the offer.
-
-3. Decision support
-   - The end product is not charts. It is better management visibility.
-
-4. Sector relevance
-   - Especially relevant for schools, training providers, SMEs, service operations, and digital products.
-
-5. Practical consulting
-   - Short, useful engagements with outputs that teams can actually adopt.
+- It is easier for buyers to recognise themselves quickly.
+- It creates stronger differentiation than general analytics consulting.
+- It aligns directly with the founder's strengths in KPI logic, reporting clarity, and operational intelligence.
+- It avoids the credibility trap of sounding like a large firm without the track record or team.
+- It gives the business a clear entry wedge that can expand later once proof and referrals accumulate.

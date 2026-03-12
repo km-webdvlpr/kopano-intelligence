@@ -7,7 +7,7 @@ import { services } from "@/lib/site-content";
 export const metadata = {
   title: "Services",
   description:
-    "Consulting services covering operational dashboards, KPI packs, reporting audits, learning intelligence, workflow analytics, and bespoke reporting tools.",
+    "Learning analytics dashboards, programme performance reviews, operational reporting systems, intervention visibility, and bespoke programme intelligence support.",
 };
 
 export default function ServicesPage() {
@@ -15,9 +15,9 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="Practical analytics offers designed for outcomes, not billable ambiguity."
-        description="Each service is structured around the management problem being solved, the reporting assets delivered, and the kind of organisation that benefits most."
-        primaryCta={{ href: "/contact", label: "Request a KPI audit" }}
+        title="Focused service lines for learning and programme operations."
+        description="Each engagement is built around a specific reporting problem, a defined set of deliverables, and a credible scope for a solo specialist practice."
+        primaryCta={{ href: "/contact", label: "Request a programme analytics review" }}
         secondaryCta={{ href: "/case-studies", label: "Review proof points" }}
       />
 
@@ -35,20 +35,21 @@ export default function ServicesPage() {
                 </div>
                 <div className="soft-panel p-6">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-dusk">
-                    Ideal Client
+                    Ideal client and problem
                   </p>
                   <p className="mt-3 text-dusk">{service.idealClient}</p>
+                  <p className="mt-4 text-sm text-dusk">{service.problem}</p>
                 </div>
               </div>
               <div className="mt-8 grid gap-8 lg:grid-cols-2">
                 <div>
                   <h3 className="text-xl font-semibold font-[var(--font-display)]">
-                    Deliverables
+                    What is delivered
                   </h3>
                   <ul className="mt-4 space-y-3 text-dusk">
                     {service.deliverables.map((item) => (
                       <li key={item} className="flex gap-3">
-                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -56,12 +57,12 @@ export default function ServicesPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold font-[var(--font-display)]">
-                    Outcomes
+                    Why it matters
                   </h3>
                   <ul className="mt-4 space-y-3 text-dusk">
                     {service.outcomes.map((item) => (
                       <li key={item} className="flex gap-3">
-                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -74,8 +75,8 @@ export default function ServicesPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Start with the smallest intervention that unlocks better management visibility."
-        description="Not every organisation needs a large implementation. Many need cleaner KPIs, a tighter reporting pack, or a sharper operational review."
+        title="Start with the smallest intervention that unlocks clearer programme visibility."
+        description="Many organisations do not need a large implementation first. They need sharper KPI definitions, a cleaner reporting rhythm, or a dashboard that reflects how delivery is actually managed."
         primary={{ href: "/contact", label: "Explore a dashboard project" }}
         secondary={{ href: "/contact", label: "Book a consultation" }}
       />

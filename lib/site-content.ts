@@ -1,248 +1,265 @@
+export const brandOptions = [
+  {
+    name: "Kopano Learning Intelligence",
+    rationale:
+      "Combines a credible African-rooted name with clear niche relevance for analytics, reporting, and programme visibility.",
+  },
+  {
+    name: "Groundline Learning Advisory",
+    rationale:
+      "Feels composed and practical, but is less distinct and less explicit about analytics depth.",
+  },
+  {
+    name: "Motswedi Programme Intelligence",
+    rationale:
+      "Has regional texture and seriousness, though it asks more explanation from first-time buyers.",
+  },
+] as const;
+
+export const brand = {
+  name: "Kopano Learning Intelligence",
+  shortName: "Kopano",
+  location: "Johannesburg, South Africa",
+  email: "hello@kopanolearningintelligence.co.za",
+  siteUrl: "https://kopanolearningintelligence.co.za",
+  strapline: "Operational Intelligence for Learning Organisations",
+} as const;
+
 export const services = [
   {
-    slug: "operational-dashboard-setup",
-    title: "Operational Dashboard Setup",
-    outcome: "Visibility for weekly management",
+    slug: "learning-analytics-dashboards",
+    title: "Learning Analytics Dashboards",
+    outcome: "Make learner and programme performance visible",
     summary:
-      "Design and build dashboards that help leaders see throughput, bottlenecks, service performance, and KPI movement without relying on spreadsheet-heavy manual reviews.",
+      "Design a reporting layer that gives programme leaders clear visibility into cohort progress, attendance, completion, and learner movement without relying on manual spreadsheet summaries.",
     idealClient:
-      "Service businesses, SMEs, recruitment teams, or internal operations functions that have data but weak visibility.",
+      "Training academies, private learning providers, online programmes, or education operations teams with fragmented learner reporting.",
+    problem:
+      "Managers can see administrative data in separate systems, but not the performance picture across learners, cohorts, facilitators, and modules.",
     deliverables: [
-      "KPI definition workshop and metric shortlist",
-      "Dashboard structure with priority views for leadership and team leads",
-      "Cleaned reporting logic for source data, calculations, and filters",
-      "Handover notes covering refresh routines and interpretation guidance",
+      "Cohort, attendance, and completion dashboard structure",
+      "Learner progress and module progression views",
+      "Facilitator or programme-level performance reporting",
+      "Definitions for priority metrics, filters, and management views",
     ],
     outcomes: [
-      "A reporting view leaders can use in recurring meetings",
-      "Fewer manual reconciliations and less screenshot-driven reporting",
-      "Clearer accountability around performance and process breakdowns",
+      "Faster visibility into where cohorts are progressing or stalling",
+      "Reduced manual reporting effort in recurring reviews",
+      "A management-ready dashboard layer that complements existing LMS or admin tools",
     ],
   },
   {
-    slug: "monthly-reporting-kpi-packs",
-    title: "Monthly Reporting & KPI Packs",
-    outcome: "Consistent reporting without internal drag",
+    slug: "programme-performance-reviews",
+    title: "Programme Performance Reviews",
+    outcome: "Diagnose where reporting and delivery are breaking down",
     summary:
-      "A retained reporting service that turns scattered exports and ad hoc spreadsheets into a reliable monthly decision pack with concise commentary.",
+      "Run a structured review of current reporting, KPI design, and programme performance logic to show where visibility is weak and what needs redesign first.",
     idealClient:
-      "Founders, school leaders, operations managers, and product teams that need reporting rhythm but lack in-house analytics capacity.",
+      "Skills programmes, youth development initiatives, NGOs, or funded delivery environments with reporting friction and unclear management insight.",
+    problem:
+      "Leadership knows completion, attendance, or learner outcomes need attention, but the current reporting setup does not reveal where the issues actually sit.",
     deliverables: [
-      "Monthly KPI pack with narrative commentary and trend interpretation",
-      "Metric definitions and data-quality checks",
-      "Executive summary page for management meetings",
-      "Optional follow-up review call on key shifts and intervention areas",
+      "Reporting maturity assessment",
+      "Programme KPI review and visibility-gap analysis",
+      "Dropout, bottleneck, or intervention diagnosis",
+      "A prioritised recommendation memo for the next 30 to 90 days",
     ],
     outcomes: [
-      "Steadier reporting cadence",
+      "Clearer understanding of the real reporting problem",
+      "A sharper intervention path before new dashboards are built",
+      "More defensible management conversations around performance",
+    ],
+  },
+  {
+    slug: "operational-reporting-systems",
+    title: "Operational Reporting Systems",
+    outcome: "Move beyond spreadsheet-heavy reporting routines",
+    summary:
+      "Build structured reporting systems that turn fragmented exports and manual updates into a repeatable decision-support rhythm for programme and operations managers.",
+    idealClient:
+      "Learning providers, academies, and programme teams that already produce reports but struggle with consistency, trust, or management usefulness.",
+    problem:
+      "Reporting exists, but it is slow to assemble, inconsistent from month to month, and too administrative to support decisions.",
+    deliverables: [
+      "KPI definitions and reporting cadence design",
+      "Management-ready templates or reporting packs",
+      "Dashboard structure for monthly or weekly reviews",
+      "Interpretation guidance for leadership use",
+    ],
+    outcomes: [
+      "A cleaner operating rhythm for reporting and review",
       "Less ambiguity in recurring performance updates",
-      "Management insight that is ready to use rather than decode",
+      "Structured decision support instead of ad hoc admin summaries",
     ],
   },
   {
-    slug: "operational-intelligence-reviews",
-    title: "Operational Intelligence Reviews",
-    outcome: "A clear diagnosis of reporting maturity",
+    slug: "intervention-cohort-visibility",
+    title: "Intervention and Cohort Visibility",
+    outcome: "See which learners and cohorts need action",
     summary:
-      "A structured review of current reports, metrics, workflows, and visibility gaps to identify where reporting breaks down and what needs to be redesigned first.",
+      "Create practical visibility for at-risk cohorts, stalled learners, and intervention follow-through so managers can act earlier and more consistently.",
     idealClient:
-      "Organisations that know reporting is weak but need a sharp outside diagnosis before investing in dashboards or systems.",
+      "Programme managers, academic operations teams, and funded programme environments responsible for learner support and outcomes reporting.",
+    problem:
+      "Support actions are reactive because managers cannot see risk patterns, cohort comparison, or intervention status early enough.",
     deliverables: [
-      "Current-state assessment of reports, KPIs, and workflows",
-      "Visibility gap map showing what management cannot currently see",
-      "Prioritised recommendations across data, reporting, and decision routines",
-      "Practical roadmap for the next 30 to 90 days",
+      "At-risk cohort and learner segmentation logic",
+      "Intervention tracking views and escalation markers",
+      "Progress monitoring by cohort, facilitator, or programme",
+      "Simple management logic for when action should be triggered",
     ],
     outcomes: [
-      "Faster understanding of what is actually broken",
-      "A staged path forward instead of buying another generic tool",
-      "Clearer alignment between reporting assets and management needs",
+      "Earlier identification of learners or groups that need support",
+      "Improved follow-through on interventions and escalation",
+      "Better visibility for sponsor, donor, or management reporting",
     ],
   },
   {
-    slug: "product-workflow-analytics",
-    title: "Product / Workflow Analytics",
-    outcome: "Understand how work or usage really moves",
+    slug: "bespoke-programme-intelligence-layer",
+    title: "Bespoke Programme Intelligence Layer",
+    outcome: "A premium reporting layer without a full platform rebuild",
     summary:
-      "Map workflows, user journeys, and state transitions into metrics that reveal friction, drop-offs, delays, and operational opportunities.",
+      "Where standard dashboards are not enough, scope a tailored reporting and KPI layer around the organisation's actual programme model, existing systems, and management needs.",
     idealClient:
-      "Digital products, service teams, or internal business units dealing with process complexity and poor event visibility.",
+      "Organisations with multiple programmes, more complex delivery logic, or sponsor-facing reporting demands that outgrow generic exports.",
+    problem:
+      "Existing systems hold the data, but they do not produce the operational visibility that leadership or funders need.",
     deliverables: [
-      "Event or workflow mapping tied to real business questions",
-      "Funnel, state-transition, or workflow-performance analysis",
-      "Recommended KPI set for product, service, or team performance",
-      "Reporting views for management and operational follow-through",
+      "Scoped reporting architecture for programme intelligence",
+      "Dashboard, KPI, and decision-support design",
+      "Visibility logic tied to cohorts, interventions, and outcomes",
+      "Implementation guidance that sits on top of existing systems",
     ],
     outcomes: [
-      "More credible insight into where performance is breaking",
-      "Shared language for discussing process and product issues",
-      "Better intervention decisions across workflows or user journeys",
-    ],
-  },
-  {
-    slug: "learning-intelligence",
-    title: "Learning Intelligence for Schools & Academies",
-    outcome: "Premium reporting without a bloated platform rebuild",
-    summary:
-      "A bespoke reporting layer for education and training environments focused on learner progress, attendance, completion, intervention visibility, and operational oversight.",
-    idealClient:
-      "Private schools, academies, training providers, LMS businesses, and education organisations needing sharper learner and operational visibility.",
-    deliverables: [
-      "Academic and operational dashboard design for leadership or programme teams",
-      "Cohort, attendance, completion, and progress reporting models",
-      "Intervention views for students, facilitators, or training managers",
-      "Practical reporting architecture that complements existing tools",
-    ],
-    outcomes: [
-      "Faster visibility into learner performance and cohort risk",
-      "Reduced manual reporting effort across academic teams",
-      "A premium intelligence layer without pitching a full LMS platform",
-    ],
-  },
-  {
-    slug: "bespoke-internal-tools",
-    title: "Bespoke Internal Analytics Tools",
-    outcome: "Lightweight internal products for specific reporting needs",
-    summary:
-      "Where dashboards alone are insufficient, build small internal analytics tools that support workflow tracking, KPI monitoring, and audit-ready reporting.",
-    idealClient:
-      "Organisations with recurring reporting friction that requires more structured tooling than spreadsheets can support.",
-    deliverables: [
-      "Scoped internal reporting tool specification",
-      "Workflow-aware interface or tracking logic",
-      "Data model and reporting views aligned to management use",
-      "Implementation guidance using a modern web stack when needed",
-    ],
-    outcomes: [
-      "More reliable operational reporting than ad hoc spreadsheets",
-      "Tighter control over internal workflows and status visibility",
-      "A sensible midpoint between manual reporting and a heavy software rollout",
+      "A bespoke analytics layer designed around real management questions",
+      "Sharper visibility without positioning a new LMS or enterprise platform",
+      "A scalable foundation for more mature programme reporting",
     ],
   },
 ] as const;
 
-export const featuredSectors = [
+export const focusAreas = [
   {
-    title: "Private schools",
+    title: "Cohort visibility",
     summary:
-      "Academic, attendance, and operational reporting for leaders who need more than admin exports.",
+      "See how cohorts are progressing, stalling, or dropping off across modules, delivery periods, or programme streams.",
   },
   {
-    title: "Training providers",
+    title: "Completion and dropout tracking",
     summary:
-      "Learning intelligence for cohorts, completion, facilitator visibility, and intervention management.",
+      "Replace end-of-cycle surprises with clearer leading signals on completion risk and learner attrition.",
   },
   {
-    title: "Service businesses",
+    title: "Attendance and engagement reporting",
     summary:
-      "Workflow visibility, service performance, and KPI trust for teams managing delivery pressure.",
+      "Track attendance patterns, engagement gaps, and operational pressure points that affect outcomes.",
   },
   {
-    title: "SMEs and digital products",
+    title: "Management decision support",
     summary:
-      "Reporting systems for organisations moving beyond Excel and fragmented platform analytics.",
+      "Turn recurring reports into something leaders can use in review meetings, intervention discussions, and sponsor updates.",
   },
 ] as const;
 
 export const reasons = [
   {
-    title: "Consulting that respects operational reality",
-    text: "The work is designed for imperfect systems, mixed data quality, and growing organisations that cannot pause operations for a large transformation programme.",
+    title: "Focused on one reporting niche",
+    text: "The practice is intentionally narrow. It is built for learning, skills, and programme delivery environments rather than for every sector with data.",
   },
   {
-    title: "Clear frameworks without bloated process",
-    text: "The founder's body of work already reflects structured thinking and concise communication. That makes stakeholder conversations, scope definition, and delivery sharper.",
+    title: "Built around management use",
+    text: "The aim is not to produce decorative dashboards. It is to help leaders see learner movement, cohort risk, operational pressure, and intervention needs in time to act.",
   },
   {
-    title: "Technical depth where it matters",
-    text: "SQL, Power BI, Python, reporting logic, and full-stack product experience help close the gap between analysis strategy and what can actually be shipped.",
+    title: "Technical depth with practical restraint",
+    text: "SQL, Power BI, Python, KPI logic, and product experience support delivery, but the offer remains a focused reporting layer rather than a promise to build full enterprise software.",
   },
 ] as const;
 
-export const industries = [
+export const audiences = [
   {
-    slug: "education-training",
-    label: "Education and Training",
-    title: "Schools, academies, and learning businesses",
+    slug: "training-academies",
+    label: "Training Academies",
+    title: "Training academies running multiple cohorts and modules",
     summary:
-      "Academic and training environments often collect plenty of administrative data but still struggle to see learner progress, cohort risk, and intervention needs clearly.",
+      "Training teams often have learner data, attendance records, and assessment information, but still struggle to see which cohorts are performing, slipping, or requiring intervention.",
     painPoints: [
-      "Attendance, completion, and performance data sitting in separate systems",
-      "Manual reporting cycles that absorb academic staff time",
-      "Weak visibility into cohort health, progression, and intervention triggers",
+      "Cohort reporting is manual and time-consuming",
+      "Completion and dropout patterns are spotted too late",
+      "Programme managers lack a single view across learners, modules, and facilitators",
     ],
     analyticsHelps: [
-      "Creates learner and cohort dashboards for leadership and academic teams",
-      "Defines the KPIs that matter beyond raw admin counts",
-      "Supports intervention planning with cleaner visibility on risk and progress",
+      "Creates cohort and module performance visibility for recurring reviews",
+      "Introduces clearer tracking of completion, attendance, and risk",
+      "Supports management action with cleaner intervention logic",
     ],
   },
   {
-    slug: "service-operations",
-    label: "Service Operations",
-    title: "Service teams and operational delivery functions",
+    slug: "skills-programmes",
+    label: "Skills Programmes",
+    title: "Skills development and workforce readiness programmes",
     summary:
-      "Service businesses need reporting that reflects how work moves: queues, states, delays, volume, turnaround times, and quality markers.",
+      "Programme delivery environments often need to report both internally and externally, yet rely on spreadsheet-heavy updates that make it hard to trust the signal.",
     painPoints: [
-      "No shared view of workflow movement or stuck cases",
-      "Metrics that exist but are not trusted by managers",
-      "Operations reviews that rely on anecdotes rather than consistent reporting",
+      "Learner progress and support actions are hard to monitor consistently",
+      "Stakeholder reports emphasise counts more than operational insight",
+      "Funded programmes need better visibility into outcomes and exceptions",
     ],
     analyticsHelps: [
-      "Maps workflows into measurable states and management dashboards",
-      "Clarifies throughput, backlog, bottlenecks, and turnaround KPIs",
-      "Improves executive visibility without heavy enterprise tooling",
+      "Improves visibility into cohort movement and learner support status",
+      "Strengthens sponsor or management reporting with clearer KPI definitions",
+      "Makes intervention and escalation patterns easier to see",
     ],
   },
   {
-    slug: "smes",
-    label: "SMEs",
-    title: "Growing SMEs still running on manual reporting",
+    slug: "ngos-funded-programmes",
+    label: "NGOs and Funded Programmes",
+    title: "NGOs and funded programmes delivering training or youth development",
     summary:
-      "Many SMEs operate with spreadsheet-heavy reporting that becomes fragile as volume grows and decision pressure increases.",
+      "Many organisations in this category carry serious reporting obligations but still manage data across disconnected tools and manually assembled reports.",
     painPoints: [
-      "Important numbers scattered across Excel files and operational systems",
-      "Founders spending time assembling reports instead of using them",
-      "Low confidence in recurring KPI packs and trend analysis",
+      "Reporting must satisfy programme managers, executives, and funders",
+      "Intervention tracking is inconsistent across teams or sites",
+      "Operational issues are often buried inside narrative reporting",
     ],
     analyticsHelps: [
-      "Creates a reporting layer that reduces manual effort",
-      "Introduces metric consistency and routine decision support",
-      "Builds dashboards and reporting packs sized for SME budgets and pace",
+      "Builds structured monthly reporting packs and dashboard views",
+      "Makes intervention follow-through easier to review and evidence",
+      "Helps leadership separate operational issues from administrative noise",
     ],
   },
   {
-    slug: "digital-products",
-    label: "Digital Products",
-    title: "Digital platforms needing product and customer visibility",
+    slug: "education-operations",
+    label: "Education Operations",
+    title: "Education operations teams supporting delivery and learner outcomes",
     summary:
-      "Digital products often have event data, support data, and financial signals spread across tools without a coherent business-facing analytics layer.",
+      "Operations teams inside education and training environments need reporting that links attendance, progression, interventions, and programme delivery to real management decisions.",
     painPoints: [
-      "Usage metrics disconnected from operational or customer outcomes",
-      "No clear KPI narrative for product, retention, or support performance",
-      "Leadership teams pulling fragmented screenshots from multiple tools",
+      "Administrative systems do not answer operational management questions",
+      "Leaders lack visibility across cohorts, sites, or delivery cycles",
+      "Reports are built for compliance first and decision support second",
     ],
     analyticsHelps: [
-      "Structures product and workflow analytics around business decisions",
-      "Connects event visibility to customer, service, or operational outcomes",
-      "Produces reporting that management can scan quickly and trust",
+      "Clarifies what management should review weekly or monthly",
+      "Creates a reporting layer aligned to operational meetings and decisions",
+      "Makes learner, cohort, and facilitator performance easier to interpret",
     ],
   },
   {
-    slug: "recruitment-workforce",
-    label: "Recruitment and Workforce Operations",
-    title: "Recruitment, placement, and workforce reporting",
+    slug: "private-learning-providers",
+    label: "Private Learning Providers",
+    title: "Private providers scaling programmes without losing visibility",
     summary:
-      "Recruitment and workforce operations require visibility into pipeline movement, placement outcomes, bottlenecks, and team activity.",
+      "As delivery expands, private learning providers often outgrow manual reporting long before they outgrow their LMS or admin platform.",
     painPoints: [
-      "Pipeline stages are tracked, but conversion logic is weak",
-      "Operational reporting is reactive rather than structured",
-      "Managers struggle to see where activity is slowing or leaking",
+      "Leadership reporting depends on exports and manual reconciliations",
+      "Teams cannot easily compare cohorts, programmes, or facilitator performance",
+      "There is no premium reporting layer for investor, board, or management visibility",
     ],
     analyticsHelps: [
-      "Clarifies funnel stages and pipeline performance metrics",
-      "Improves reporting around workload, throughput, and conversion",
-      "Provides leadership visibility on where action is required first",
+      "Introduces a structured reporting layer without replacing core systems",
+      "Improves trust in KPI definitions and programme comparisons",
+      "Provides leadership-ready visibility into growth, risk, and delivery quality",
     ],
   },
 ] as const;
@@ -251,57 +268,57 @@ export const caseStudies = [
   {
     title: "Bontle Operational Intelligence Case Study",
     summary:
-      "Bontle was designed and shipped as a practical product example showing how service operations can move from loosely tracked activity to measurable workflow states, trusted KPI logic, and executive-ready visibility.",
+      "Bontle is framed honestly as a designed and shipped operational intelligence proof point. It shows the founder's strength in workflow visibility, KPI design, state-based logic, and management-facing reporting architecture.",
     tags: [
       "Workflow visibility",
       "KPI design",
-      "Reporting architecture",
-      "Executive dashboards",
-      "Service intelligence",
+      "State-based logic",
+      "Executive reporting",
+      "Operational intelligence",
     ],
     results: [
-      "Translated service workflows into measurable state transitions",
-      "Designed KPI logic that could support audit-ready reporting",
-      "Created a reporting architecture for operations and leadership visibility",
-      "Demonstrated how service-team data can become decision support rather than raw activity logs",
+      "Mapped operational movement into measurable state transitions",
+      "Defined KPI logic that could support trusted management reporting",
+      "Designed reporting architecture for leadership visibility and follow-through",
+      "Demonstrated how operational data can be turned into decision-ready insight",
     ],
     highlights: [
       {
         title: "Workflow measurement",
-        text: "The case study centres on making operational states explicit so service teams and leaders can see flow, backlog, and intervention points.",
+        text: "The case study shows how activity can be translated into measurable states so leaders can see flow, backlog, and intervention pressure clearly.",
       },
       {
         title: "KPI trust",
-        text: "Metrics were framed to be interpretable, defensible, and usable in management discussions instead of becoming decorative dashboard numbers.",
+        text: "Metrics were designed to be interpretable and defensible rather than decorative. That same discipline matters in programme and learning environments.",
       },
       {
-        title: "Executive reporting",
-        text: "The reporting architecture was designed to support concise leadership visibility on performance, bottlenecks, and service outcomes.",
+        title: "Reporting logic",
+        text: "The reporting structure was designed for management use, which is directly relevant to learning operations dashboards and monthly programme reviews.",
       },
     ],
   },
   {
-    title: "School performance reporting framework",
-    status: "Future case study template",
+    title: "Cohort performance reporting redesign",
+    status: "Future case study placeholder",
     summary:
-      "A future proof-point structure for showing how learner performance, attendance, and intervention visibility can be redesigned into a cleaner reporting layer for school leadership.",
+      "A future learning-focused proof point showing how cohort performance, attendance, and intervention logic can be redesigned into a cleaner reporting layer for programme managers.",
     framework: [
-      "Context and reporting pain points",
-      "KPI definitions and cohort logic",
-      "Dashboard and reporting outputs",
-      "Operational decisions improved by the reporting layer",
+      "Initial reporting pain and management blind spots",
+      "KPI definitions for cohorts, completion, and risk",
+      "Dashboard and review pack structure",
+      "Operational decisions improved by the new reporting layer",
     ],
   },
   {
-    title: "SME operations dashboard redesign",
-    status: "Future case study template",
+    title: "Completion dashboard and intervention visibility",
+    status: "Future case study placeholder",
     summary:
-      "A placeholder structure for a client story focused on taking a manual SME reporting setup and converting it into a tighter monthly KPI and dashboard routine.",
+      "A placeholder structure for showing how a training provider could move from fragmented admin reports to a clearer operational view of completion risk and intervention follow-through.",
     framework: [
-      "Starting state and management visibility problem",
-      "Reporting redesign decisions",
-      "New cadence, dashboard, and KPI pack structure",
-      "Operational and leadership outcomes",
+      "Current reporting maturity and data fragmentation",
+      "Segmentation logic for risk, progress, and support actions",
+      "Management views for weekly and monthly reviews",
+      "Practical outcomes for programme delivery and reporting confidence",
     ],
   },
 ] as const;
@@ -309,83 +326,83 @@ export const caseStudies = [
 export const processSteps = [
   {
     label: "Step 1",
-    title: "Diagnose",
-    text: "Start by understanding the operating model, reporting rhythm, management questions, data sources, and where visibility is currently weakest.",
+    title: "Diagnose the reporting problem",
+    text: "Start with the programme model, reporting routine, management questions, and existing data sources to identify where visibility is weak or misleading.",
     outputs: [
       "Current-state reporting diagnosis",
-      "Priority decisions and reporting questions",
+      "Priority management questions",
     ],
   },
   {
     label: "Step 2",
-    title: "Define metrics",
-    text: "Clarify the KPIs, thresholds, cohort logic, and performance definitions that the organisation should use consistently.",
-    outputs: ["Metric definitions", "KPI hierarchy and interpretation notes"],
+    title: "Define the KPIs that matter",
+    text: "Clarify completion, attendance, intervention, cohort, and programme definitions so the reporting layer is built on consistent logic.",
+    outputs: ["KPI definitions", "Threshold and interpretation notes"],
   },
   {
     label: "Step 3",
-    title: "Structure data",
-    text: "Bring source data into a shape that supports consistent calculations, practical filtering, and dependable reporting outputs.",
-    outputs: ["Reporting logic", "Data structure for dashboards or KPI packs"],
+    title: "Structure the reporting layer",
+    text: "Organise the data, calculations, and reporting views around recurring management use rather than raw system exports.",
+    outputs: ["Reporting logic", "Dashboard or pack structure"],
   },
   {
     label: "Step 4",
     title: "Build visibility",
-    text: "Create dashboards, reviews, or reporting packs designed around how leaders and teams actually consume information.",
-    outputs: ["Dashboard views", "Executive and operational reporting assets"],
+    text: "Create dashboards, packs, and visibility views that show learner movement, cohort health, and intervention needs clearly.",
+    outputs: ["Management-ready dashboard views", "Operational reporting assets"],
   },
   {
     label: "Step 5",
-    title: "Recommend action",
-    text: "Translate reporting into specific operational interpretation so the work does not stop at visualisation.",
-    outputs: ["Management commentary", "Intervention or action recommendations"],
+    title: "Support decision use",
+    text: "Translate the reporting into action by clarifying what leaders should look for, how to interpret shifts, and where intervention should happen.",
+    outputs: ["Decision guidance", "Intervention and review logic"],
   },
   {
     label: "Step 6",
-    title: "Support adoption",
-    text: "Help the client embed the reporting into meetings, reviews, and operating routines so the reporting layer becomes useful over time.",
-    outputs: ["Usage guidance", "Review cadence and follow-through structure"],
+    title: "Embed the routine",
+    text: "Help the client use the reporting consistently in monthly reviews, operational meetings, and sponsor or leadership updates.",
+    outputs: ["Usage guidance", "Review rhythm for ongoing adoption"],
   },
 ] as const;
 
 export const insights = [
   {
     category: "Reporting maturity",
-    title: "What small organisations get wrong about reporting",
+    title: "Why training providers struggle with reporting maturity",
     summary:
-      "A practical view on why reporting problems usually start with unclear management questions, fragmented sources, and overly manual workflows rather than a missing dashboard tool.",
+      "A practical look at why growing learning organisations accumulate admin data but still lack a structured reporting layer for management decisions.",
   },
   {
-    category: "KPI design",
-    title: "Why dashboards fail without KPI definitions",
+    category: "KPI clarity",
+    title: "Dashboards are not enough without KPI clarity",
     summary:
-      "A structured argument for defining metrics, thresholds, ownership, and business meaning before visual layers are built.",
+      "An argument for defining completion, attendance, intervention, and outcome logic before building the visual layer.",
   },
   {
-    category: "Learning analytics",
-    title: "Learning analytics beyond admin reporting",
+    category: "Learning operations",
+    title: "What learning operations leaders need beyond admin reports",
     summary:
-      "A perspective piece on how schools and training providers can build clearer visibility into learner progress, cohorts, interventions, and delivery performance.",
+      "A perspective on the difference between administrative reporting and operational intelligence for cohorts, facilitators, and programme performance.",
   },
 ] as const;
 
 export const testimonials = [
   {
-    name: "Placeholder Client Signal",
-    role: "School operations leader",
+    name: "Founder Positioning Signal",
+    role: "Learning operations buyer lens",
     quote:
-      "The reporting style is calm, structured, and useful for leadership decisions. It does not bury the important signal under noise.",
+      "This feels like someone who understands how reporting actually breaks inside learning environments, not someone selling a generic dashboard package.",
   },
   {
-    name: "Placeholder Peer Signal",
-    role: "Product and operations collaborator",
+    name: "Case-study credibility signal",
+    role: "Operations and analytics perspective",
     quote:
-      "There is a strong ability to translate workflow complexity into metrics people can actually discuss and manage against.",
+      "The strongest thread is structured visibility: defining states, clarifying KPIs, and building reporting that management can genuinely use.",
   },
   {
-    name: "Placeholder Advisory Signal",
-    role: "SME founder perspective",
+    name: "Commercial fit signal",
+    role: "Programme leadership perspective",
     quote:
-      "The work feels practical and commercially aware. It is analytics with business judgment rather than analytics for its own sake.",
+      "The offer feels focused, credible, and appropriately scoped for a specialist solo consultant rather than a broad digital agency.",
   },
 ] as const;

@@ -2,59 +2,36 @@
 
 ## Purpose
 
-Use concise, business-facing content to support consulting outreach, build credibility, and generate conversations around KPI clarity, operational visibility, and reporting maturity.
+Use business-facing content to build credibility around learning operations intelligence, support outreach, and generate consulting conversations with training and programme leaders.
 
 ## Content Pieces
 
-1. What small organisations get wrong about reporting
-   - Show that the core problem is usually poor structure, not lack of dashboards.
-
-2. Why dashboards fail without KPI definitions
-   - Explain why metric trust should come before visual design.
-
-3. Learning analytics beyond admin reporting
-   - Position the niche offer for schools and academies.
-
-4. Spreadsheet chaos is usually a reporting design problem
-   - Reframe messy reporting as a system issue, not just a tooling issue.
-
-5. The difference between reporting and decision support
-   - Clarify how management reporting should guide action.
-
-6. Three signs your service operation lacks workflow visibility
-   - Speak directly to service businesses and operations leaders.
-
-7. KPI packs for SMEs: what a monthly reporting routine should include
-   - Introduce the retainer model through useful education.
-
-8. Why generic systems still leave leaders blind
-   - Argue for bespoke reporting layers over one-size-fits-all outputs.
-
-9. What school leaders actually need to see each month
-   - Build credibility with private schools and training providers.
-
-10. From raw exports to management visibility
-    - Walk through the transformation from fragmented files to usable reporting.
-
-11. Reporting maturity for growing organisations
-    - Introduce a simple maturity model and where most teams get stuck.
-
-12. What Bontle demonstrates about operational intelligence
-    - Use the case study as a proof-of-thinking piece without overstating market deployment.
+1. Why training providers struggle with reporting maturity
+2. Dashboards are not enough without KPI clarity
+3. What learning operations leaders need beyond admin reports
+4. Why completion reporting usually breaks before completion actually drops
+5. The difference between admin reporting and decision support
+6. How to spot cohort risk before it becomes a year-end surprise
+7. What monthly programme reporting should actually include
+8. Why generic systems still leave programme managers blind
+9. A better way to report on attendance, progress, and interventions
+10. Why NGOs running training programmes need clearer operational visibility
+11. What Bontle demonstrates about operational intelligence design
+12. How to move beyond spreadsheet-heavy reporting in learning environments
 
 ## Suggested Publishing Rhythm
 
 - 2 pieces per week for 6 weeks
 - repurpose each piece into:
   - one LinkedIn post
-  - one short site article or note
+  - one site article or journal note
   - one outreach talking point
 
 ## CTA Direction
 
-Each content piece should naturally point toward one of these next steps:
+Each content piece should naturally point toward:
 
-- book a consultation
-- request a KPI audit
+- request a programme analytics review
 - discuss a dashboard project
-- ask about learning intelligence reporting
+- explore reporting support
+- enquire about intervention visibility work

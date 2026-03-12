@@ -36,17 +36,11 @@ export function PageHero({
                 {description}
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                  href={primaryCta.href}
-                  className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white"
-                >
+                <Link href={primaryCta.href} className="primary-button">
                   {primaryCta.label}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link
-                  href={secondaryCta.href}
-                  className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-semibold text-ink"
-                >
+                <Link href={secondaryCta.href} className="secondary-button">
                   {secondaryCta.label}
                 </Link>
               </div>
@@ -54,16 +48,16 @@ export function PageHero({
             <div className="soft-panel p-6 lg:p-8">
               {children ?? (
                 <div className="space-y-4">
-                  <p className="eyebrow">What Clients Gain</p>
+                  <p className="eyebrow">What This Work Delivers</p>
                   <div className="grid gap-3 text-sm text-dusk">
-                    <div className="rounded-2xl bg-white px-4 py-4">
-                      Clearer KPI definitions and management language
+                    <div className="rounded-2xl border border-olive/10 bg-white px-4 py-4">
+                      Clearer KPI definitions for learners, cohorts, and programmes
                     </div>
-                    <div className="rounded-2xl bg-white px-4 py-4">
-                      Reporting that fits leadership routines and operating decisions
+                    <div className="rounded-2xl border border-olive/10 bg-white px-4 py-4">
+                      Reporting that supports interventions rather than admin recap
                     </div>
-                    <div className="rounded-2xl bg-white px-4 py-4">
-                      A practical path from messy data to usable visibility
+                    <div className="rounded-2xl border border-olive/10 bg-white px-4 py-4">
+                      A premium analytics layer that fits existing delivery systems
                     </div>
                   </div>
                 </div>

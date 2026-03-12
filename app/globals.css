@@ -13,13 +13,13 @@ html {
 body {
   @apply bg-mist text-ink antialiased;
   background-image:
-    radial-gradient(circle at top left, rgba(199, 173, 145, 0.18), transparent 28%),
-    radial-gradient(circle at top right, rgba(139, 94, 60, 0.08), transparent 22%),
-    linear-gradient(180deg, #f9f5ef 0%, #f6f0e8 100%);
+    radial-gradient(circle at top left, rgba(107, 113, 72, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(184, 143, 114, 0.12), transparent 20%),
+    linear-gradient(180deg, #f8f5ee 0%, #f2ede2 100%);
 }
 
 ::selection {
-  background: rgba(139, 94, 60, 0.18);
+  background: rgba(107, 113, 72, 0.24);
 }
 
 .container-shell {
@@ -41,19 +41,31 @@ body {
   right: 0;
   bottom: -1px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(79, 70, 63, 0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(76, 82, 49, 0.24), transparent);
 }
 
 .eyebrow {
-  @apply text-xs font-semibold uppercase tracking-[0.24em] text-ember;
+  @apply text-xs font-semibold uppercase tracking-[0.24em] text-olive;
 }
 
 .panel {
-  @apply rounded-[28px] border border-black/5 bg-white/75 shadow-panel backdrop-blur;
+  @apply rounded-[28px] border border-olive/10 bg-white/80 shadow-panel backdrop-blur;
 }
 
 .soft-panel {
-  @apply rounded-[24px] border border-black/5 bg-[#fcfaf7];
+  @apply rounded-[24px] border border-olive/10 bg-[#f7f4ec];
+}
+
+.badge {
+  @apply rounded-full border border-olive/15 bg-sage/55 px-4 py-2 text-sm text-dusk;
+}
+
+.primary-button {
+  @apply inline-flex items-center gap-2 rounded-full bg-oliveDeep px-6 py-3 text-sm font-semibold text-white transition hover:bg-olive;
+}
+
+.secondary-button {
+  @apply inline-flex items-center gap-2 rounded-full border border-olive/15 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-olive/30 hover:bg-sage/30;
 }
 
 .text-balance {

@@ -2,11 +2,12 @@ import { CheckCircle2 } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { CTASection } from "@/components/cta-section";
 import { PageHero } from "@/components/page-hero";
+import { brand } from "@/lib/site-content";
 
 export const metadata = {
   title: "About",
   description:
-    "About the founder of Kopano Intelligence, a Johannesburg-based analytics consultant focused on operational intelligence, KPI design, and practical reporting systems.",
+    "About the founder of Kopano Learning Intelligence, a Johannesburg-based solo consultant focused on learning operations intelligence, KPI clarity, and practical reporting systems.",
 };
 
 export default function AboutPage() {
@@ -14,8 +15,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="An analytics consultant with operational judgment, product depth, and a practical South African lens."
-        description="Kopano Intelligence is designed as a solo boutique practice for organisations that need sharper reporting, clearer metrics, and better decision support without unnecessary complexity."
+        title="A solo analytics consultant focused on the reporting realities of learning and programme delivery."
+        description={`${brand.name} is positioned for organisations that need clearer programme visibility, stronger KPI logic, and reporting systems that support management decisions without unnecessary software sprawl.`}
         primaryCta={{ href: "/contact", label: "Book a consultation" }}
         secondaryCta={{ href: "/journal", label: "Read insights" }}
       />
@@ -24,26 +25,32 @@ export default function AboutPage() {
         <div className="container-shell grid gap-10 lg:grid-cols-[1fr_0.95fr]">
           <div className="panel p-8 lg:p-10">
             <h2 className="text-4xl font-semibold font-[var(--font-display)]">
-              Positioned between analyst, strategist, and systems thinker.
+              Positioned between analyst, operator, and reporting strategist.
             </h2>
             <p className="mt-5 text-dusk">
-              The founder&apos;s public body of work already points in one direction: business-facing analytics, structured communication, operational thinking, and practical frameworks that help people move from raw data to management action.
+              The founder&apos;s public work consistently points to structured thinking,
+              practical analytics, and clear communication. The Data Analyst Field
+              Manual emphasis on turning raw data into business direction sits
+              directly behind this practice.
             </p>
             <p className="mt-5 text-dusk">
-              That includes work shaped around SQL, Power BI, Python, KPI design, reporting discipline, and product execution with React, TypeScript, FastAPI, and PostgreSQL. The consultancy uses that range to bridge strategy and implementation instead of separating them.
+              The Bontle case study contributes another important thread: measurable
+              workflow logic, KPI trust, executive reporting, and operational
+              visibility. This consultancy applies those strengths specifically to
+              learning operations, programme delivery, and training environments.
             </p>
           </div>
           <div className="soft-panel p-8">
             <p className="eyebrow">What clients can expect</p>
             <ul className="mt-5 space-y-4 text-dusk">
               {[
-                "Business-first framing that connects reporting outputs to real management routines",
-                "Clear communication that stays concise, structured, and practical",
-                "Sensitivity to the realities of South African and African operating environments",
-                "Enough technical depth to shape data models, dashboards, and reporting workflows directly",
+                "A business-facing approach that starts with management questions rather than dashboards",
+                "Structured, concise communication that helps stakeholders move quickly",
+                "Grounding in South African operating realities and delivery constraints",
+                "Enough technical depth to define metrics, shape data, and build reporting assets directly",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -56,16 +63,16 @@ export default function AboutPage() {
         <div className="container-shell grid gap-6 lg:grid-cols-3">
           {[
             {
-              title: "Business context",
-              text: "The consultancy is grounded in the kinds of reporting questions leaders actually ask: where performance is slipping, what is blocked, and what requires intervention.",
+              title: "Learning operations focus",
+              text: "The niche is deliberate: training providers, programme environments, and education operations teams that need better visibility into performance and interventions.",
             },
             {
-              title: "Operational intelligence",
-              text: "The focus is on workflows, state changes, bottlenecks, throughput, and KPI definitions that reflect how work truly moves.",
+              title: "Reporting discipline",
+              text: "The practice emphasises KPI logic, reporting structure, and decision support rather than broad digital transformation language.",
             },
             {
-              title: "Practical value",
-              text: "Theory matters when it improves decisions. The bias is toward useful systems, credible analysis, and outputs that can be used the same week they are delivered.",
+              title: "Practical delivery",
+              text: "The goal is to leave behind useful dashboards, packs, and reporting routines that can support real decisions in the same week they are used.",
             },
           ].map((item) => (
             <div key={item.title} className="panel p-8">
@@ -79,8 +86,8 @@ export default function AboutPage() {
       </AnimatedSection>
 
       <CTASection
-        title="This site is built to start serious consulting conversations quickly."
-        description="It can support freelance work, short-term contract roles, retained reporting engagements, and selective consulting projects with growing organisations."
+        title="This practice is built to start serious consulting conversations with the right niche buyers."
+        description="It is designed for programme managers, operations leaders, and founders who need a specialist view on reporting maturity and learning delivery visibility."
         primary={{ href: "/contact", label: "Start a conversation" }}
         secondary={{ href: "/services", label: "Review the offers" }}
       />

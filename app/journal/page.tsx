@@ -8,7 +8,7 @@ import { insights } from "@/lib/site-content";
 export const metadata = {
   title: "Journal",
   description:
-    "A journal for operational intelligence, KPI design, reporting maturity, and learning analytics insights.",
+    "A journal for learning operations intelligence, KPI clarity, programme reporting, and reporting maturity in training environments.",
 };
 
 export default function JournalPage() {
@@ -16,8 +16,8 @@ export default function JournalPage() {
     <>
       <PageHero
         eyebrow="Journal"
-        title="A practical ideas shelf for reporting maturity, KPI design, and operational visibility."
-        description="The journal is structured for future thought leadership that supports consulting conversations, outreach, and credibility with business-facing buyers."
+        title="A practical ideas shelf for reporting maturity in learning environments."
+        description="The journal is structured to support thought leadership, outreach, and credibility with training providers, programme leaders, and education operations buyers."
         primaryCta={{ href: "/contact", label: "Discuss an idea" }}
         secondaryCta={{ href: "/services", label: "See service offers" }}
       />
@@ -43,10 +43,10 @@ export default function JournalPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Useful thinking is part of the service."
-        description="The journal is meant to show how reporting problems can be reframed clearly before they are solved operationally."
+        title="Useful thinking is part of the service, especially in a niche that still lacks clear reporting language."
+        description="The journal is intended to show how reporting problems in learning operations can be framed clearly before tools or dashboards are proposed."
         primary={{ href: "/contact", label: "Book a consultation" }}
-        secondary={{ href: "/approach", label: "Review the method" }}
+        secondary={{ href: "/method", label: "Review the method" }}
       />
     </>
   );

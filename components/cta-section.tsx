@@ -16,7 +16,8 @@ export function CTASection({
   return (
     <AnimatedSection className="section-space">
       <div className="container-shell">
-        <div className="panel p-8 lg:p-12">
+        <div className="relative panel overflow-hidden p-8 lg:p-12">
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent" />
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
             <div>
               <p className="eyebrow">Next Step</p>
@@ -26,17 +27,11 @@ export function CTASection({
               <p className="mt-4 max-w-2xl text-dusk">{description}</p>
             </div>
             <div className="flex flex-wrap gap-4 lg:justify-end">
-              <Link
-                href={primary.href}
-                className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white"
-              >
+              <Link href={primary.href} className="primary-button">
                 {primary.label}
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link
-                href={secondary.href}
-                className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-semibold text-ink"
-              >
+              <Link href={secondary.href} className="secondary-button">
                 {secondary.label}
               </Link>
             </div>

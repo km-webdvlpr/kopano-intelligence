@@ -1,50 +1,77 @@
 # Service Packages
 
-## KPI Audit Sprint
+## Learning Analytics Audit
 
 ### Ideal Client
 
-An SME, school, academy, service business, or product team with unclear KPIs, inconsistent reporting, or low confidence in current dashboards.
+A training provider, academy, NGO, or programme team with learner data but weak reporting visibility.
 
 ### Problem Solved
 
-The client knows reporting is weak but cannot yet identify whether the main issue is definitions, structure, workflow visibility, or dashboard design.
+The client knows reporting is not helping management decisions, but cannot yet see whether the main issue is KPI design, data structure, reporting cadence, or dashboard logic.
 
 ### Deliverables
 
-- current-state KPI and reporting review
-- visibility gap map
-- metric definition shortlist
-- practical recommendations for what to fix first
+- current-state reporting review
+- KPI and visibility gap assessment
+- priority management questions
+- recommended reporting architecture
 - concise executive summary
 
-### Timeline
+### Estimated Timeline
 
 1 to 2 weeks
 
 ### Pricing Placeholder
 
-- Strategy fee: `R[insert]`
-- Optional implementation follow-on: `R[insert]`
+- Audit fee: `R[insert]`
+- Optional follow-on implementation: `R[insert]`
+
+## Programme Performance Review
+
+### Ideal Client
+
+A skills programme, youth development initiative, or funded delivery environment with pressure around outcomes, completion, or reporting quality.
+
+### Problem Solved
+
+Leadership needs a clearer view of where delivery is breaking down and what the reporting system is currently failing to show.
+
+### Deliverables
+
+- programme KPI review
+- dropout and bottleneck analysis
+- intervention visibility assessment
+- reporting redesign recommendations
+- prioritised next-step roadmap
+
+### Estimated Timeline
+
+1 to 3 weeks
+
+### Pricing Placeholder
+
+- Review fee: `R[insert]`
+- Optional implementation support: `R[insert]`
 
 ## Dashboard Setup Sprint
 
 ### Ideal Client
 
-An organisation that already has usable data but needs a clearer management dashboard or reporting pack.
+A learning provider or academy with usable data that needs a sharper dashboard layer for management reviews.
 
 ### Problem Solved
 
-The client has data, but leadership still cannot quickly see bottlenecks, performance shifts, or KPI movement.
+The organisation has data, but leaders still cannot clearly see cohort performance, attendance patterns, completion shifts, or learner risk.
 
 ### Deliverables
 
 - KPI definition alignment
-- dashboard wireframe and reporting logic
-- dashboard build or structured reporting pack
-- interpretation notes and handover guidance
+- dashboard structure and wireframes
+- cohort and learner reporting views
+- interpretation guidance and handover notes
 
-### Timeline
+### Estimated Timeline
 
 2 to 4 weeks
 
@@ -53,80 +80,54 @@ The client has data, but leadership still cannot quickly see bottlenecks, perfor
 - Sprint fee: `R[insert]`
 - Optional monthly support: `R[insert]/month`
 
-## Monthly Reporting Retainer
+## Monthly Reporting Support
 
 ### Ideal Client
 
-A founder, school leader, operations head, or programme manager who needs steady monthly reporting without hiring internally yet.
+A programme team or training organisation that needs recurring reporting discipline without hiring internally yet.
 
 ### Problem Solved
 
-Reporting exists in fragments, takes too long to assemble, or lacks commentary that helps management decide what to do.
+Monthly reporting exists in fragments, takes too long to produce, or lacks commentary that helps management act.
 
 ### Deliverables
 
-- monthly KPI pack
+- monthly KPI or programme reporting pack
 - trend commentary
-- metric QA and consistency checks
+- QA on recurring metrics
 - optional monthly review call
 
-### Timeline
+### Estimated Timeline
 
 Rolling monthly engagement
 
 ### Pricing Placeholder
 
 - Monthly retainer: `R[insert]/month`
-- Optional add-on analysis: `R[insert]`
+- Optional deep-dive analysis: `R[insert]`
 
-## Learning Intelligence Pack
-
-### Ideal Client
-
-Private schools, academies, training providers, and LMS-linked education businesses needing sharper learner and cohort visibility.
-
-### Problem Solved
-
-Administrative data exists, but leadership lacks integrated visibility into attendance, progress, completion, cohorts, and interventions.
-
-### Deliverables
-
-- learner and cohort KPI design
-- attendance and progress reporting structure
-- intervention visibility dashboard or reporting pack
-- academic and operational management views
-
-### Timeline
-
-2 to 5 weeks depending on scope
-
-### Pricing Placeholder
-
-- Project fee: `R[insert]`
-- Ongoing reporting support: `R[insert]/month`
-
-## Operations Visibility Review
+## Intervention Visibility Pack
 
 ### Ideal Client
 
-Service businesses, workforce teams, or operations functions with unclear workflow performance and limited management visibility.
+An organisation responsible for learner support, at-risk cohorts, or funded outcomes reporting.
 
 ### Problem Solved
 
-Leaders cannot clearly see process states, bottlenecks, handoff delays, or where operational action is most needed.
+Managers cannot clearly see which learners or cohorts need action, whether interventions are happening, or where escalation is required.
 
 ### Deliverables
 
-- workflow mapping
-- bottleneck and visibility analysis
-- KPI shortlist for operational review
-- recommendation memo for dashboard, reporting, or tooling next steps
+- risk segmentation logic
+- intervention tracking view
+- escalation markers for management use
+- reporting template for follow-through reviews
 
-### Timeline
+### Estimated Timeline
 
 1 to 3 weeks
 
 ### Pricing Placeholder
 
-- Review fee: `R[insert]`
-- Optional implementation phase: `R[insert]`
+- Project fee: `R[insert]`
+- Optional ongoing reporting support: `R[insert]/month`

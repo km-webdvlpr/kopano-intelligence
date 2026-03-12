@@ -2,159 +2,172 @@
 
 ## Executive Summary
 
-Kopano Intelligence is a solo analytics consultancy based in Johannesburg, South Africa. The practice is positioned around operational intelligence: helping growing organisations turn fragmented operational, customer, or learner data into decision-ready reporting. The consultancy focuses on KPI clarity, dashboards, reporting systems, workflow visibility, and practical decision support for schools, training providers, SMEs, service businesses, recruitment operations, and digital products.
+Kopano Learning Intelligence is a Johannesburg-based solo consultancy focused on learning operations intelligence. The practice helps training providers, programme teams, academies, NGOs, and skills delivery environments turn learner and programme data into decision-ready reporting. The offer is deliberately narrow: learning analytics dashboards, programme performance reviews, operational reporting systems, and cohort or intervention visibility.
 
-The model is intentionally lean, high-trust, and founder-led. It is designed to win early consulting work quickly through focused service offers, credible thought leadership, selective case-study proof, and clear outreach.
+The business is designed as a founder-led specialist practice rather than a broad consulting firm. Its commercial advantage comes from focus, credibility, and practical delivery in an area where many organisations have data but still lack operational visibility.
 
-## Problem In The Market
+## Market Problem
 
-Many growing organisations have data but still lack management visibility. Common problems include:
+Many learning and training environments have administrative systems, LMS data, spreadsheets, and recurring reports, yet managers still struggle to answer basic operational questions.
 
-- spreadsheet-heavy reporting with low trust
-- unclear KPI definitions
-- fragmented operational data across tools
-- dashboards that show activity but not decision-relevant signal
-- limited in-house analytics capacity
-- bloated software options that do not fit the operating reality of smaller organisations
+Common issues include:
 
-Schools and training providers face an additional visibility gap: they often have administrative systems but weak insight into learner progress, cohort performance, completion risk, and interventions.
+- manual reporting cycles that take too long to assemble
+- weak KPI definitions for attendance, completion, risk, or interventions
+- fragmented visibility across learners, cohorts, facilitators, and programmes
+- reporting that serves compliance or admin needs better than management decisions
+- dashboards that exist visually but do not support action
+
+The market gap is not merely a missing dashboard. It is a missing reporting layer.
+
+## Why Learning And Programme Operations Need Better Reporting
+
+Learning organisations are judged by outcomes, progression, completion, and delivery quality, but their reporting systems often lag behind their operational complexity.
+
+This creates practical problems:
+
+- programme managers cannot see which cohorts are stalling
+- leaders cannot distinguish isolated learner cases from systemic issues
+- interventions are reactive because risk is spotted too late
+- sponsors or funders receive summary reports without meaningful operational context
+- internal teams spend time preparing updates rather than using them
+
+Learning operations intelligence addresses this by improving KPI clarity, reporting structure, and management visibility.
 
 ## Target Clients
 
-Primary target segments:
+Primary target clients:
 
-- private schools
-- training academies and LMS businesses
-- small service businesses
-- SMEs still using Excel or manual reporting
-- recruitment and workforce operations
-- digital products needing KPI visibility
+- training academies
+- skills development centres
+- private education and upskilling providers
+- LMS-supported programmes
+- NGOs running training or youth development programmes
+- SETA-aligned or funded programme environments
+- workforce development initiatives
+- education operations teams
 
 Ideal early buyers:
 
-- founders
-- operations managers
-- heads of school
+- programme managers
+- heads of operations
 - academic managers
-- programme leads
-- product leads
-- business owners who need reporting but do not want a full analytics hire yet
+- founders of niche training providers
+- monitoring and evaluation leads
+- delivery heads in funded programmes
 
 ## Service Model
 
-Kopano Intelligence will sell focused consulting offers:
+The practice sells focused consulting offers:
 
-1. Dashboard setup projects
-2. Monthly reporting retainers
-3. KPI and reporting audits
-4. Operational performance analysis
-5. Learning intelligence reporting for schools and training providers
-6. Bespoke internal analytics tools for structured reporting needs
+1. Learning Analytics Dashboards
+2. Programme Performance Reviews
+3. Operational Reporting Systems
+4. Intervention and Cohort Visibility
+5. Bespoke Programme Intelligence Layer
 
-The delivery model is modular. Clients can start with a diagnosis or KPI audit, then expand into dashboards, reporting packs, or bespoke reporting tools.
+The model is modular. Clients can begin with a diagnostic engagement, then expand into dashboards, reporting packs, or retained reporting support.
 
 ## Revenue Model
 
 Revenue streams:
 
-- fixed-fee sprint projects
-- monthly retainers
-- advisory reviews
-- scoped internal reporting tool builds
+- fixed-fee review sprints
+- fixed-fee dashboard and reporting builds
+- monthly reporting support retainers
+- scoped bespoke reporting layer projects
 
-Indicative commercial logic:
+Commercial logic:
 
-- KPI audit sprint as an entry offer
-- dashboard sprint as the main implementation offer
-- monthly reporting as recurring revenue
-- learning intelligence pack as a niche premium offer
-- bespoke internal analytics tools as higher-value scoped work
+- a smaller audit or review acts as an entry offer
+- implementation work follows where the diagnosis is clear
+- monthly support creates recurring revenue
+- bespoke programme intelligence work becomes the premium offer once trust is established
 
 ## Go-To-Market
 
-The go-to-market strategy is built around speed and credibility.
-
-Channels:
+Primary acquisition channels:
 
 - warm network outreach
-- LinkedIn content and direct outreach
-- direct email to school, academy, and SME decision-makers
-- demo-led outreach using the website and Bontle proof point
-- selective job and contract positioning through the same credibility assets
+- LinkedIn positioning and thought leadership
+- direct outreach to academies, providers, NGOs, and programme teams
+- demo-led outreach using the website and strategy assets
+- proposal follow-up supported by the white paper and service packages
 
-The website functions as both a consulting site and a professional positioning tool for short-term contract opportunities.
+The website functions as both a conversion tool and a credibility asset. It should quickly communicate that the founder understands reporting problems in learning environments.
 
-## Tools And Delivery Model
+## Tools And Delivery
 
-Core tooling:
+Core delivery tools:
 
 - SQL
 - Power BI
 - Python
-- Excel where necessary
-- React + TypeScript + FastAPI + PostgreSQL for bespoke analytics tools
+- Excel where required
+- modern web tooling for lightweight reporting interfaces when justified
 
 Delivery principles:
 
-- keep scope clear
-- prioritise management usefulness
-- avoid overbuilding
-- design outputs for operational meetings and executive review
-- leave behind reusable reporting assets
+- keep scope crisp
+- define KPIs before visual layers
+- prioritise management usefulness over feature sprawl
+- build around existing systems where possible
+- avoid presenting the offer as an LMS replacement
 
 ## Risks And Mitigations
 
-### Risk: Low initial market trust
+### Risk: Niche is too narrow for early pipeline
 
 Mitigation:
 
-- use clear positioning
-- publish practical insights
-- frame Bontle honestly as a shipped proof point
-- leverage warm intros aggressively
+- target adjacent segments within the same learning and programme ecosystem
+- use a clear outreach thesis focused on reporting pain, not software
+- emphasise the breadth within the niche: academies, NGOs, funded programmes, and private providers
 
-### Risk: Solo capacity constraints
-
-Mitigation:
-
-- productise common services
-- use fixed-scope sprints
-- standardise templates for audits and reporting packs
-
-### Risk: Buyers ask for broad software projects too early
+### Risk: Buyers assume the offer is general analytics or software development
 
 Mitigation:
 
-- anchor offers around reporting and operational intelligence
-- only expand into bespoke tools when the reporting problem clearly justifies it
+- keep messaging tightly anchored to learning operations
+- repeat that the offer is a reporting and visibility layer
+- use the services and case studies pages to reinforce scope boundaries
 
-### Risk: Confusion with training or portfolio positioning
+### Risk: Solo capacity gets stretched
 
 Mitigation:
 
-- keep site and messaging fully business-facing
-- foreground consulting language, operational value, and decision support
+- standardise audit and reporting templates
+- prefer fixed-scope work over open-ended delivery
+- use retainers selectively where cadence is predictable
+
+### Risk: Limited initial trust
+
+Mitigation:
+
+- use Bontle as honest evidence of operational intelligence capability
+- publish practical niche content
+- leverage warm introductions and proof-led conversations
 
 ## 90-Day Execution Plan
 
 ### Days 1-30
 
-- launch the website
-- finalise LinkedIn headline and summary to match the positioning
-- publish 3 insight posts tied to KPI clarity, dashboards, and learning analytics
-- send warm outreach to trusted contacts, founders, and operators
-- prepare a short consultation deck based on site language
+- finalise and share the site with trusted contacts
+- update LinkedIn headline and summary to match the new niche
+- publish 3 niche-relevant insight posts
+- identify 30 to 40 target organisations in Johannesburg and online
+- prepare a concise diagnostic conversation deck
 
 ### Days 31-60
 
-- run direct outreach to Johannesburg schools, academies, and SMEs
-- offer KPI audit sprints as the easiest entry point
-- book discovery calls and refine the service packages based on objections
-- publish one case-study style post on Bontle and one on reporting maturity
+- send direct outreach to academies, training providers, and NGO programme teams
+- run follow-up outreach using the white paper as a lead magnet
+- book discovery calls around reporting maturity and dashboard pain
+- refine service packaging based on objections and call notes
 
 ### Days 61-90
 
-- convert at least one audit into implementation work
-- secure one recurring monthly reporting client
-- expand proof assets with one real client example if available
-- build a simple CRM pipeline for outreach follow-up, proposals, and referrals
+- convert at least one review into implementation work
+- secure one monthly reporting support client
+- capture one learning-sector proof point or testimonial if possible
+- tighten the outreach process and build a simple proposal pipeline

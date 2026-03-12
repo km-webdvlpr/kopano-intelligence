@@ -8,7 +8,7 @@ import { caseStudies } from "@/lib/site-content";
 export const metadata = {
   title: "Case Studies",
   description:
-    "Case studies and proof points showing how Kopano Intelligence frames workflow visibility, KPI design, and executive reporting.",
+    "Proof points showing how Kopano Learning Intelligence frames workflow visibility, KPI design, and management reporting for learning operations work.",
 };
 
 export default function CaseStudiesPage() {
@@ -18,8 +18,8 @@ export default function CaseStudiesPage() {
     <>
       <PageHero
         eyebrow="Case Studies"
-        title="Proof framed around measurable operations, trusted metrics, and management visibility."
-        description="The flagship example below is presented honestly as a designed and shipped product case study that demonstrates consulting capability without overstating deployment claims."
+        title="Proof built around operational visibility, trusted metrics, and reporting logic."
+        description="The flagship example is presented honestly as a designed and shipped operational intelligence case study. It demonstrates the founder's method without overstating learning-sector deployment."
         primaryCta={{ href: "/contact", label: "Request a project conversation" }}
         secondaryCta={{ href: "/services", label: "Explore services" }}
       />
@@ -29,14 +29,14 @@ export default function CaseStudiesPage() {
           <div className="panel p-8 lg:p-12">
             <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
               <div>
-                <p className="eyebrow">Flagship Case Study</p>
+                <p className="eyebrow">Flagship Proof Point</p>
                 <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)] sm:text-5xl">
                   {flagship.title}
                 </h2>
                 <p className="mt-5 text-dusk">{flagship.summary}</p>
                 <div className="mt-6 flex flex-wrap gap-3 text-sm text-dusk">
                   {flagship.tags.map((tag) => (
-                    <span key={tag} className="rounded-full bg-black/5 px-4 py-2">
+                    <span key={tag} className="badge">
                       {tag}
                     </span>
                   ))}
@@ -49,7 +49,7 @@ export default function CaseStudiesPage() {
                 <ul className="mt-4 space-y-3 text-dusk">
                   {flagship.results.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -72,11 +72,11 @@ export default function CaseStudiesPage() {
 
       <AnimatedSection className="section-space">
         <div className="container-shell">
-          <div className="flex items-end justify-between gap-6">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="eyebrow">Future Case Study Structure</p>
               <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)]">
-                Built to accommodate more proof as client work grows.
+                Ready for future proof points in the learning niche.
               </h2>
             </div>
             <Link
@@ -97,7 +97,7 @@ export default function CaseStudiesPage() {
                 <ul className="mt-5 space-y-3 text-sm text-dusk">
                   {study.framework.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-ember" />
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-olive" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -109,10 +109,10 @@ export default function CaseStudiesPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Strong case studies start with scoped, measurable consulting work."
-        description="A KPI audit, reporting redesign, or workflow analytics project can become the next proof point when the work is structured well from day one."
+        title="Strong case studies start with scoped work that improves real reporting decisions."
+        description="A programme review, dashboard sprint, or intervention visibility project can become the next niche proof point when it is structured clearly from the start."
         primary={{ href: "/contact", label: "Start a scoped project" }}
-        secondary={{ href: "/approach", label: "See the consulting workflow" }}
+        secondary={{ href: "/method", label: "See the consulting method" }}
       />
     </>
   );
