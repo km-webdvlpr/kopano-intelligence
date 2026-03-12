@@ -1,12 +1,5 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  BarChart3,
-  CheckCircle2,
-  Eye,
-  GraduationCap,
-  Layers3,
-} from "lucide-react";
+import { ArrowRight, CheckCircle2, Compass, GraduationCap, LineChart, Target } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { CTASection } from "@/components/cta-section";
 import { PageHero } from "@/components/page-hero";
@@ -15,6 +8,7 @@ import {
   brand,
   caseStudies,
   focusAreas,
+  identity,
   reasons,
   services,
   testimonials,
@@ -25,18 +19,14 @@ export default function HomePage() {
     <>
       <PageHero
         eyebrow={brand.strapline}
-        title="Make programme performance visible."
-        description="Kopano Learning Intelligence helps training providers, academies, NGOs, and learning operations teams turn learner reporting into decision support. The focus is on cohort visibility, KPI clarity, interventions, and management-ready reporting rather than on replacing your LMS."
-        primaryCta={{ href: "/contact", label: "Discuss a reporting problem" }}
-        secondaryCta={{ href: "/services", label: "Explore services" }}
+        title={identity.title}
+        description={identity.summary}
+        primaryCta={{ href: "/contact", label: "Discuss work or roles" }}
+        secondaryCta={{ href: "/case-studies", label: "See proof" }}
       >
-        <div className="grid gap-4 sm:grid-cols-3">
-          {[
-            "See where cohorts are progressing, stalling, or dropping off",
-            "Move beyond spreadsheet-heavy reporting and admin summaries",
-            "Build KPI clarity for learning and training operations",
-          ].map((item) => (
-            <div key={item} className="soft-panel p-4 text-sm text-dusk">
+        <div className="grid gap-4">
+          {identity.proofPoints.map((item) => (
+            <div key={item} className="rounded-2xl border border-olive/10 bg-white px-4 py-4 text-sm text-dusk">
               <CheckCircle2 className="mb-3 h-5 w-5 text-olive" />
               {item}
             </div>
@@ -47,30 +37,30 @@ export default function HomePage() {
       <AnimatedSection className="section-space section-divider">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="What This Means"
-            title="Learning operations intelligence is a reporting layer for people who run programmes, cohorts, and delivery teams."
-            description="It connects learner and programme data to the management questions that matter: who is progressing, where completion is slipping, which cohorts need intervention, and how delivery performance is trending."
+            eyebrow="Core Strength"
+            title="One sharp through-line: turn messy data into clear business direction."
+            description="The site is not trying to present a big agency or a generic portfolio. It is built to show a focused operator who can improve reporting, clarify KPIs, and make performance more visible."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {[
               {
-                icon: Eye,
-                title: "Visibility across the learner journey",
-                text: "Replace isolated admin exports with a clearer view of attendance, progress, completion, and support needs.",
+                icon: Compass,
+                title: "Business-first framing",
+                text: "The work starts with management questions, operating pressure, and what leaders actually need to see.",
               },
               {
-                icon: Layers3,
-                title: "KPI logic leaders can trust",
-                text: "Define the metrics, thresholds, and reporting views that make recurring management reviews more credible.",
+                icon: LineChart,
+                title: "Reporting and dashboard craft",
+                text: "Strongest fit where reporting exists, but still feels too manual, unclear, or disconnected from decisions.",
               },
               {
-                icon: BarChart3,
-                title: "Decision support for programme teams",
-                text: "Design reporting around real operational conversations, not just what the system can export by default.",
+                icon: Target,
+                title: "Useful signal, not analytics theatre",
+                text: "The goal is not more charts. The goal is better visibility, cleaner communication, and stronger judgment.",
               },
             ].map(({ icon: Icon, title, text }) => (
               <div key={title} className="panel p-8">
-                <Icon className="h-8 w-8 text-olive" />
+                <Icon className="h-8 w-8 text-oliveDeep" />
                 <h3 className="mt-5 text-2xl font-semibold font-[var(--font-display)]">
                   {title}
                 </h3>
@@ -84,14 +74,14 @@ export default function HomePage() {
       <AnimatedSection className="section-space section-divider">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Key Problems Solved"
-            title="The work is designed for learning organisations that already have data but still lack operational visibility."
-            description="The consultancy stays deliberately focused on reporting, KPI design, and visibility for learning and programme delivery environments."
+            eyebrow="Where I Add Value"
+            title="A clear fit for reporting work, KPI clarity, and operational visibility."
+            description="The consulting signal stays, but the scope is tighter and more believable: a few strong areas executed well rather than too many broad promises."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {focusAreas.map((item) => (
               <div key={item.title} className="soft-panel p-6">
-                <h3 className="text-2xl font-semibold font-[var(--font-display)]">
+                <h3 className="text-2xl font-semibold font-[var(--font-display)] text-ink">
                   {item.title}
                 </h3>
                 <p className="mt-3 text-sm text-dusk">{item.summary}</p>
@@ -104,12 +94,12 @@ export default function HomePage() {
       <AnimatedSection className="section-space section-divider">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Services"
-            title="Focused offers for learning analytics, programme visibility, and reporting maturity."
-            description="The offer is intentionally narrow so early clients can see a clear fit: this is specialist work for training and learning operations, not broad analytics for every industry."
+            eyebrow="Work"
+            title="Three credible ways to work together."
+            description="This is enough to support project conversations and role conversations at the same time without making the site feel split or confused."
           />
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {services.slice(0, 4).map((service) => (
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {services.map((service) => (
               <div key={service.slug} className="panel p-8">
                 <p className="eyebrow">{service.outcome}</p>
                 <h3 className="mt-3 text-3xl font-semibold font-[var(--font-display)]">
@@ -128,11 +118,8 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-8">
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-ink"
-            >
-              View all services <ArrowRight className="h-4 w-4" />
+            <Link href="/services" className="inline-flex items-center gap-2 text-sm font-semibold text-ink">
+              See work detail <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -142,10 +129,14 @@ export default function HomePage() {
         <div className="container-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <SectionHeading
-              eyebrow="Why This Matters"
-              title="Learning organisations do not need more admin reporting. They need a clearer operating picture."
-              description="When reporting improves, managers can spot completion risk earlier, compare cohort performance more intelligently, and bring more discipline to interventions and programme reviews."
+              eyebrow="Differentiation"
+              title="The learning-platform and programme angle remains a specialist edge, not the whole identity."
+              description="It gives the site a clear niche strength for future work while still keeping the broader signal useful for analyst, BI, reporting, and operations-facing roles."
             />
+            <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-olive/15 bg-[#f0f7ed] px-4 py-2 text-sm text-dusk">
+              <GraduationCap className="h-4 w-4 text-oliveDeep" />
+              Strong fit for learning platforms, services, and programme visibility work
+            </div>
           </div>
           <div className="grid gap-5">
             {reasons.map((reason) => (
@@ -165,14 +156,14 @@ export default function HomePage() {
           <div className="panel overflow-hidden">
             <div className="grid gap-8 p-8 lg:grid-cols-[1.1fr_0.9fr] lg:p-12">
               <div>
-                <p className="eyebrow">Featured Proof Point</p>
+                <p className="eyebrow">Featured Proof</p>
                 <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)] sm:text-5xl">
-                  Bontle shows the founder&apos;s strength in operational intelligence, KPI design, and management reporting logic.
+                  Bontle is still the cleanest example of operational thinking, KPI logic, and reporting design.
                 </h2>
                 <p className="mt-5 max-w-2xl text-dusk">
-                  It is not presented as a learning-sector case study. It is presented as
-                  honest evidence of how workflow visibility, measurable states, and
-                  management-ready reporting can be designed and shipped with rigor.
+                  It works here because it shows the quality of thinking: measurable flow,
+                  trusted KPIs, and reporting built for management use. That signal matters
+                  whether the next opportunity is a project, a contract, or a role.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3 text-sm text-dusk">
                   {caseStudies[0].tags.map((tag) => (
@@ -181,15 +172,9 @@ export default function HomePage() {
                     </span>
                   ))}
                 </div>
-                <Link
-                  href="/case-studies"
-                  className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-ink"
-                >
-                  Read the case study <ArrowRight className="h-4 w-4" />
-                </Link>
               </div>
               <div className="soft-panel p-7">
-                <p className="eyebrow">What It Demonstrates</p>
+                <p className="eyebrow">What It Signals</p>
                 <ul className="mt-5 space-y-4 text-sm text-dusk">
                   {caseStudies[0].results.map((item) => (
                     <li key={item} className="flex gap-3">
@@ -205,39 +190,11 @@ export default function HomePage() {
       </AnimatedSection>
 
       <AnimatedSection className="section-space">
-        <div className="container-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <div>
-            <SectionHeading
-              eyebrow="Niche Fit"
-              title="Built for training providers, programme teams, and education operators who need clarity without a platform rebuild."
-              description="The practice is positioned as a premium analytics and reporting layer. It is not an LMS replacement, not a generic software studio, and not a broad agency."
-            />
-            <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-olive/15 bg-sage/45 px-4 py-2 text-sm text-dusk">
-              <GraduationCap className="h-4 w-4 text-olive" />
-              Reporting and KPI visibility designed around learning delivery
-            </div>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            {[
-              "Learner performance visibility by cohort, module, or facilitator",
-              "Completion, attendance, and intervention reporting for management meetings",
-              "Monthly decision-support packs for programme leads and executives",
-              "Bespoke reporting structures aligned to how delivery teams actually work",
-            ].map((item) => (
-              <div key={item} className="panel p-6 text-dusk">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection className="section-space">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Positioning Check"
-            title="The site is designed to feel focused, credible, and properly scoped for a solo specialist."
-            description="These are positioning signals rather than inflated social proof. They reinforce the intended market impression for early-stage outreach."
+            eyebrow="Signal"
+            title="The site should make one impression quickly: this person can help us see clearly."
+            description="That applies whether the viewer is a recruiter, hiring manager, founder, or operator."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {testimonials.map((testimonial) => (
@@ -254,10 +211,10 @@ export default function HomePage() {
       </AnimatedSection>
 
       <CTASection
-        title="If learner reporting is still slow, manual, or too administrative, fix the reporting layer first."
-        description="Start with a programme analytics review, a dashboard project, or a scoped conversation about where visibility is breaking down."
-        primary={{ href: "/contact", label: "Request a programme analytics review" }}
-        secondary={{ href: "/method", label: "See the method" }}
+        title="Open to reporting projects, contract work, and the right role."
+        description="If you need clearer reporting, stronger KPI logic, or a business-facing analyst who can work with messy reality, start the conversation there."
+        primary={{ href: "/contact", label: "Start a conversation" }}
+        secondary={{ href: "/about", label: "Read the positioning" }}
       />
     </>
   );

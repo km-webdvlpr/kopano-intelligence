@@ -4,20 +4,20 @@ import { PageHero } from "@/components/page-hero";
 import { audiences } from "@/lib/site-content";
 
 export const metadata = {
-  title: "Who It's For",
+  title: "Fit",
   description:
-    "Focused client fit for training academies, skills programmes, NGOs, education operations teams, and private learning providers.",
+    "Where the positioning is strongest: hiring teams, operators, and learning or programme environments.",
 };
 
 export default function WhoItsForPage() {
   return (
     <>
       <PageHero
-        eyebrow="Who It's For"
-        title="Built for organisations running learning, training, and programme delivery."
-        description="This practice is not positioned for every sector. It is designed for environments where leaders need clearer reporting on learners, cohorts, attendance, completion, interventions, and programme performance."
-        primaryCta={{ href: "/contact", label: "Discuss your reporting environment" }}
-        secondaryCta={{ href: "/services", label: "View services" }}
+        eyebrow="Fit"
+        title="Built to make sense to both hiring teams and potential clients."
+        description="The site works best when the viewer needs the same core capability: someone who can improve reporting, clarify KPIs, and turn complex operating data into something more useful."
+        primaryCta={{ href: "/contact", label: "Discuss fit" }}
+        secondaryCta={{ href: "/about", label: "Read the positioning" }}
       />
 
       <AnimatedSection className="section-space">
@@ -35,7 +35,7 @@ export default function WhoItsForPage() {
                 <div className="grid gap-5 md:grid-cols-2">
                   <div className="soft-panel p-6">
                     <h3 className="text-lg font-semibold font-[var(--font-display)]">
-                      Common reporting problems
+                      Typical gaps
                     </h3>
                     <ul className="mt-4 space-y-3 text-sm text-dusk">
                       {audience.painPoints.map((item) => (
@@ -45,7 +45,7 @@ export default function WhoItsForPage() {
                   </div>
                   <div className="soft-panel p-6">
                     <h3 className="text-lg font-semibold font-[var(--font-display)]">
-                      How analytics improves management
+                      What the signal shows
                     </h3>
                     <ul className="mt-4 space-y-3 text-sm text-dusk">
                       {audience.analyticsHelps.map((item) => (
@@ -61,10 +61,10 @@ export default function WhoItsForPage() {
       </AnimatedSection>
 
       <CTASection
-        title="If your team is still managing delivery through exported spreadsheets and administrative summaries, the reporting layer probably needs redesign."
-        description="The goal is to help programme and operations leaders see what is happening early enough to intervene, not just report after the fact."
-        primary={{ href: "/contact", label: "Discuss a reporting problem" }}
-        secondary={{ href: "/about", label: "Learn about the practice" }}
+        title="The same strength should be legible from multiple angles."
+        description="Whether the viewer is hiring, buying a project, or exploring contract support, the site should still read as one person with one strong capability."
+        primary={{ href: "/contact", label: "Start a conversation" }}
+        secondary={{ href: "/services", label: "See work areas" }}
       />
     </>
   );

@@ -5,20 +5,20 @@ import { PageHero } from "@/components/page-hero";
 import { services } from "@/lib/site-content";
 
 export const metadata = {
-  title: "Services",
+  title: "Work",
   description:
-    "Learning analytics dashboards, programme performance reviews, operational reporting systems, intervention visibility, and bespoke programme intelligence support.",
+    "Focused work areas across reporting setup, KPI reviews, and learning or programme visibility.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
-        title="Focused service lines for learning and programme operations."
-        description="Each engagement is built around a specific reporting problem, a defined set of deliverables, and a credible scope for a solo specialist practice."
-        primaryCta={{ href: "/contact", label: "Request a programme analytics review" }}
-        secondaryCta={{ href: "/case-studies", label: "Review proof points" }}
+        eyebrow="Work"
+        title="A small set of offers that support both project work and analyst positioning."
+        description="The emphasis is on believable scope: strong reporting, KPI clarity, and operational visibility work rather than a long service catalogue."
+        primaryCta={{ href: "/contact", label: "Discuss a project" }}
+        secondaryCta={{ href: "/contact", label: "Discuss a role" }}
       />
 
       <AnimatedSection className="section-space">
@@ -35,7 +35,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="soft-panel p-6">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-dusk">
-                    Ideal client and problem
+                    Best fit
                   </p>
                   <p className="mt-3 text-dusk">{service.idealClient}</p>
                   <p className="mt-4 text-sm text-dusk">{service.problem}</p>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
               <div className="mt-8 grid gap-8 lg:grid-cols-2">
                 <div>
                   <h3 className="text-xl font-semibold font-[var(--font-display)]">
-                    What is delivered
+                    What the work includes
                   </h3>
                   <ul className="mt-4 space-y-3 text-dusk">
                     {service.deliverables.map((item) => (
@@ -75,10 +75,10 @@ export default function ServicesPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Start with the smallest intervention that unlocks clearer programme visibility."
-        description="Many organisations do not need a large implementation first. They need sharper KPI definitions, a cleaner reporting rhythm, or a dashboard that reflects how delivery is actually managed."
-        primary={{ href: "/contact", label: "Explore a dashboard project" }}
-        secondary={{ href: "/contact", label: "Book a consultation" }}
+        title="The goal is not to offer everything. The goal is to offer the few things that can be landed and delivered well."
+        description="That supports a stronger signal for both consulting conversations and hiring conversations."
+        primary={{ href: "/contact", label: "Discuss an opportunity" }}
+        secondary={{ href: "/case-studies", label: "Review proof" }}
       />
     </>
   );

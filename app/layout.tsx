@@ -24,19 +24,19 @@ export const metadata: Metadata = {
     template: `%s | ${brand.name}`,
   },
   description:
-    "Johannesburg-based solo consultancy for learning analytics dashboards, programme performance reviews, KPI design, and reporting systems for training and skills delivery environments.",
+    "Johannesburg-based business-facing data analyst focused on reporting, dashboards, KPI clarity, and operational visibility. Available for projects, contract work, and the right role.",
   metadataBase: new URL(brand.siteUrl),
   openGraph: {
     title: brand.name,
     description:
-      "Operational intelligence for learning organisations, training providers, and programme teams.",
+      "Business-facing analytics for reporting, KPI clarity, and operational visibility.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: brand.name,
     description:
-      "Learning operations intelligence for programme managers, academies, and training providers.",
+      "A business-facing data analyst open to projects, contract work, and the right role.",
   },
   icons: {
     icon: "/favicon.svg",

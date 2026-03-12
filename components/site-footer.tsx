@@ -9,19 +9,18 @@ export function SiteFooter() {
           <div className="text-sm uppercase tracking-[0.28em] text-dusk">
             {brand.strapline}
           </div>
-          <div className="mt-2 font-[var(--font-display)] text-3xl font-semibold">
+          <div className="mt-2 font-[var(--font-display)] text-3xl font-semibold text-ink">
             {brand.name}
           </div>
           <p className="mt-3 max-w-xl text-sm text-dusk">
-            Solo analytics consultancy for learning organisations that need clearer
-            reporting on cohorts, completion, attendance, interventions, and
-            programme performance.
+            A Johannesburg-based analyst brand built to support consulting
+            conversations, contract work, and strong business-facing analytics roles.
           </p>
         </div>
         <div className="flex flex-col gap-2 text-sm text-dusk">
           <Link href="/contact">{brand.email}</Link>
           <p>{brand.location}</p>
-          <p>Available for remote consulting and selective on-site workshops.</p>
+          <p>Open to projects, contract work, and the right full-time opportunity.</p>
         </div>
       </div>
     </footer>

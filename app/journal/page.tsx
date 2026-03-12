@@ -8,7 +8,7 @@ import { insights } from "@/lib/site-content";
 export const metadata = {
   title: "Journal",
   description:
-    "A journal for learning operations intelligence, KPI clarity, programme reporting, and reporting maturity in training environments.",
+    "Short ideas on reporting, KPI clarity, and operational visibility.",
 };
 
 export default function JournalPage() {
@@ -16,10 +16,10 @@ export default function JournalPage() {
     <>
       <PageHero
         eyebrow="Journal"
-        title="A practical ideas shelf for reporting maturity in learning environments."
-        description="The journal is structured to support thought leadership, outreach, and credibility with training providers, programme leaders, and education operations buyers."
+        title="Short ideas on reporting, KPI clarity, and operational visibility."
+        description="The journal supports the public signal: practical analytics thinking, structured communication, and business-facing clarity."
         primaryCta={{ href: "/contact", label: "Discuss an idea" }}
-        secondaryCta={{ href: "/services", label: "See service offers" }}
+        secondaryCta={{ href: "/services", label: "See work areas" }}
       />
 
       <AnimatedSection className="section-space">
@@ -35,7 +35,7 @@ export default function JournalPage() {
                 href="/contact"
                 className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink"
               >
-                Request this perspective in a consultation <ArrowRight className="h-4 w-4" />
+                Continue the conversation <ArrowRight className="h-4 w-4" />
               </Link>
             </article>
           ))}
@@ -43,10 +43,10 @@ export default function JournalPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Useful thinking is part of the service, especially in a niche that still lacks clear reporting language."
-        description="The journal is intended to show how reporting problems in learning operations can be framed clearly before tools or dashboards are proposed."
-        primary={{ href: "/contact", label: "Book a consultation" }}
-        secondary={{ href: "/method", label: "Review the method" }}
+        title="Useful writing should strengthen the same core signal as the rest of the site."
+        description="Clear thinking, practical analytics, and reporting that makes business sense."
+        primary={{ href: "/contact", label: "Reach out" }}
+        secondary={{ href: "/about", label: "Read the positioning" }}
       />
     </>
   );

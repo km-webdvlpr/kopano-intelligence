@@ -26,10 +26,10 @@ export function PageHero({
     <section className="section-space section-divider">
       <div className="container-shell">
         <div className="panel overflow-hidden p-8 lg:p-12">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+          <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
             <div>
               <p className="eyebrow">{eyebrow}</p>
-              <h1 className="mt-4 max-w-4xl text-balance font-[var(--font-display)] text-5xl font-semibold leading-tight sm:text-6xl lg:text-7xl">
+              <h1 className="mt-4 max-w-4xl text-balance font-[var(--font-display)] text-5xl font-semibold leading-tight text-ink sm:text-6xl lg:text-7xl">
                 {title}
               </h1>
               <p className="mt-6 max-w-2xl text-base text-dusk sm:text-lg">
@@ -48,16 +48,16 @@ export function PageHero({
             <div className="soft-panel p-6 lg:p-8">
               {children ?? (
                 <div className="space-y-4">
-                  <p className="eyebrow">What This Work Delivers</p>
+                  <p className="eyebrow">Core Signal</p>
                   <div className="grid gap-3 text-sm text-dusk">
                     <div className="rounded-2xl border border-olive/10 bg-white px-4 py-4">
-                      Clearer KPI definitions for learners, cohorts, and programmes
+                      Analyst depth with business-facing communication
                     </div>
                     <div className="rounded-2xl border border-olive/10 bg-white px-4 py-4">
-                      Reporting that supports interventions rather than admin recap
+                      Reporting and KPI logic built for management use
                     </div>
                     <div className="rounded-2xl border border-olive/10 bg-white px-4 py-4">
-                      A premium analytics layer that fits existing delivery systems
+                      Strong fit for projects, contracts, and the right role
                     </div>
                   </div>
                 </div>

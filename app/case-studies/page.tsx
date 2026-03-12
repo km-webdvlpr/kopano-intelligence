@@ -6,9 +6,9 @@ import { PageHero } from "@/components/page-hero";
 import { caseStudies } from "@/lib/site-content";
 
 export const metadata = {
-  title: "Case Studies",
+  title: "Proof",
   description:
-    "Proof points showing how Kopano Learning Intelligence frames workflow visibility, KPI design, and management reporting for learning operations work.",
+    "Proof points for reporting, KPI design, and operational visibility work.",
 };
 
 export default function CaseStudiesPage() {
@@ -17,11 +17,11 @@ export default function CaseStudiesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Case Studies"
-        title="Proof built around operational visibility, trusted metrics, and reporting logic."
-        description="The flagship example is presented honestly as a designed and shipped operational intelligence case study. It demonstrates the founder's method without overstating learning-sector deployment."
-        primaryCta={{ href: "/contact", label: "Request a project conversation" }}
-        secondaryCta={{ href: "/services", label: "Explore services" }}
+        eyebrow="Proof"
+        title="The goal of the proof is simple: show strong thinking, useful structure, and credible execution."
+        description="The flagship example below matters because it demonstrates how reporting, KPI logic, and operational visibility can be designed with discipline."
+        primaryCta={{ href: "/contact", label: "Discuss a similar need" }}
+        secondaryCta={{ href: "/services", label: "See work areas" }}
       />
 
       <AnimatedSection className="section-space section-divider">
@@ -44,7 +44,7 @@ export default function CaseStudiesPage() {
               </div>
               <div className="soft-panel p-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-dusk">
-                  What it shows
+                  What it proves
                 </p>
                 <ul className="mt-4 space-y-3 text-dusk">
                   {flagship.results.map((item) => (
@@ -74,16 +74,13 @@ export default function CaseStudiesPage() {
         <div className="container-shell">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="eyebrow">Future Case Study Structure</p>
+              <p className="eyebrow">Next Proof</p>
               <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)]">
-                Ready for future proof points in the learning niche.
+                Ready to support future work examples without overclaiming today.
               </h2>
             </div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-ink"
-            >
-              Ask about similar work <ArrowRight className="h-4 w-4" />
+            <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-ink">
+              Start a conversation <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -109,10 +106,10 @@ export default function CaseStudiesPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Strong case studies start with scoped work that improves real reporting decisions."
-        description="A programme review, dashboard sprint, or intervention visibility project can become the next niche proof point when it is structured clearly from the start."
-        primary={{ href: "/contact", label: "Start a scoped project" }}
-        secondary={{ href: "/method", label: "See the consulting method" }}
+        title="Proof only matters if it helps the next person trust the work."
+        description="That trust can lead to a role, a project, or a contract. The standard stays the same."
+        primary={{ href: "/contact", label: "Discuss an opportunity" }}
+        secondary={{ href: "/about", label: "See the positioning" }}
       />
     </>
   );
