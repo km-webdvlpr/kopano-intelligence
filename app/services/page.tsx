@@ -5,20 +5,20 @@ import { PageHero } from "@/components/page-hero";
 import { services } from "@/lib/site-content";
 
 export const metadata = {
-  title: "Work",
+  title: "Systems",
   description:
-    "Focused work areas across reporting setup, KPI reviews, and learning or programme visibility.",
+    "Focused bespoke system types across internal business systems, reporting tools, and portals.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Work"
-        title="A small set of offers that support both project work and analyst positioning."
-        description="The emphasis is on believable scope: strong reporting, KPI clarity, and operational visibility work rather than a long service catalogue."
-        primaryCta={{ href: "/contact", label: "Discuss a project" }}
-        secondaryCta={{ href: "/contact", label: "Discuss a role" }}
+        eyebrow="Systems"
+        title="A focused build menu for practical businesses."
+        description="Tec4th is strongest when the scope is clear and the system solves a real operating problem. These are the three main build categories."
+        primaryCta={{ href: "/contact", label: "Discuss a build" }}
+        secondaryCta={{ href: "/case-studies", label: "See proof" }}
       />
 
       <AnimatedSection className="section-space">
@@ -44,7 +44,7 @@ export default function ServicesPage() {
               <div className="mt-8 grid gap-8 lg:grid-cols-2">
                 <div>
                   <h3 className="text-xl font-semibold font-[var(--font-display)]">
-                    What the work includes
+                    What gets built
                   </h3>
                   <ul className="mt-4 space-y-3 text-dusk">
                     {service.deliverables.map((item) => (
@@ -57,7 +57,7 @@ export default function ServicesPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold font-[var(--font-display)]">
-                    Why it matters
+                    What improves
                   </h3>
                   <ul className="mt-4 space-y-3 text-dusk">
                     {service.outcomes.map((item) => (
@@ -75,10 +75,10 @@ export default function ServicesPage() {
       </AnimatedSection>
 
       <CTASection
-        title="The goal is not to offer everything. The goal is to offer the few things that can be landed and delivered well."
-        description="That supports a stronger signal for both consulting conversations and hiring conversations."
-        primary={{ href: "/contact", label: "Discuss an opportunity" }}
-        secondary={{ href: "/case-studies", label: "Review proof" }}
+        title="The strongest bespoke systems start with a clean problem definition."
+        description="The aim is not to build everything. It is to build the system that the business actually needs next."
+        primary={{ href: "/contact", label: "Discuss scope" }}
+        secondary={{ href: "/method", label: "See the process" }}
       />
     </>
   );

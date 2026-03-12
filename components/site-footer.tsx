@@ -9,18 +9,18 @@ export function SiteFooter() {
           <div className="text-sm uppercase tracking-[0.28em] text-dusk">
             {brand.strapline}
           </div>
-          <div className="mt-2 font-[var(--font-display)] text-3xl font-semibold text-ink">
+          <div className="mt-2 font-[var(--font-display)] text-4xl font-semibold text-oliveDeep">
             {brand.name}
           </div>
           <p className="mt-3 max-w-xl text-sm text-dusk">
-            A Johannesburg-based analyst brand built to support consulting
-            conversations, contract work, and strong business-facing analytics roles.
+            Bespoke software for growing operators who need custom systems,
+            better workflow control, and modern business tools without enterprise overhead.
           </p>
         </div>
         <div className="flex flex-col gap-2 text-sm text-dusk">
           <Link href="/contact">{brand.email}</Link>
           <p>{brand.location}</p>
-          <p>Open to projects, contract work, and the right full-time opportunity.</p>
+          <p>Scoped systems, phased delivery, and practical rollout support.</p>
         </div>
       </div>
     </footer>

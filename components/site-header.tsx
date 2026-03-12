@@ -6,10 +6,10 @@ import { brand } from "@/lib/site-content";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Work" },
-  { href: "/who-its-for", label: "Fit" },
+  { href: "/services", label: "Systems" },
+  { href: "/who-its-for", label: "Clients" },
   { href: "/case-studies", label: "Proof" },
-  { href: "/method", label: "Method" },
+  { href: "/method", label: "Process" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -18,14 +18,14 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-olive/10 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-olive/10 bg-[#fffef8]/95 backdrop-blur">
       <div className="container-shell py-4">
         <div className="flex min-h-[60px] items-center justify-between gap-6">
           <Link href="/" className="min-w-fit">
             <div className="text-sm uppercase tracking-[0.28em] text-dusk">
               {brand.location}
             </div>
-            <div className="font-[var(--font-display)] text-3xl font-semibold leading-none text-ink">
+            <div className="font-[var(--font-display)] text-4xl font-semibold leading-none text-oliveDeep">
               {brand.name}
             </div>
           </Link>
@@ -44,7 +44,7 @@ export function SiteHeader() {
             })}
           </nav>
           <Link href="/contact" className="secondary-button">
-            Discuss work or roles
+            Start a build
           </Link>
         </div>
         <nav className="-mx-1 mt-4 flex gap-2 overflow-x-auto pb-1 lg:hidden">

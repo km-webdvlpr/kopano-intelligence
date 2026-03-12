@@ -5,20 +5,20 @@ import { PageHero } from "@/components/page-hero";
 import { processSteps } from "@/lib/site-content";
 
 export const metadata = {
-  title: "Method",
+  title: "Process",
   description:
-    "A simple method for clarifying business questions, defining KPIs, and building decision-ready reporting.",
+    "A practical process for scoping, designing, and shipping bespoke business systems.",
 };
 
 export default function MethodPage() {
   return (
     <>
       <PageHero
-        eyebrow="Method"
-        title="Simple enough to explain. Strong enough to deliver with."
-        description="The method is intentionally lean. It keeps the work grounded in business questions, KPI logic, and outputs that leaders can actually use."
-        primaryCta={{ href: "/contact", label: "Discuss a project" }}
-        secondaryCta={{ href: "/case-studies", label: "Review proof" }}
+        eyebrow="Process"
+        title="The process stays simple so the build can stay real."
+        description="Tec4th works best when the problem, workflow, and next system step are defined clearly. The process is intentionally practical and restrained."
+        primaryCta={{ href: "/contact", label: "Discuss a build" }}
+        secondaryCta={{ href: "/case-studies", label: "See Bontle proof" }}
       />
 
       <AnimatedSection className="section-space">
@@ -58,10 +58,10 @@ export default function MethodPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Clear work usually comes from clear framing, not from bigger words."
-        description="That is the standard here: understand the problem, define the logic, structure the reporting, and make it useful."
-        primary={{ href: "/contact", label: "Discuss the problem" }}
-        secondary={{ href: "/about", label: "See the positioning" }}
+        title="A smaller, sharper build usually beats a vague big project."
+        description="That is the discipline behind Tec4th: define the real operating problem, build the right system layer, and ship something the client can actually use."
+        primary={{ href: "/contact", label: "Scope a system" }}
+        secondary={{ href: "/services", label: "See what gets built" }}
       />
     </>
   );

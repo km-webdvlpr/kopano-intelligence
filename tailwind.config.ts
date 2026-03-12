@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        olive: "#4e784a",
-        oliveDeep: "#315b30",
-        moss: "#7f9962",
-        sand: "#b38748",
-        ink: "#152018",
-        dusk: "#465442",
+        olive: "#246235",
+        oliveDeep: "#163f23",
+        moss: "#5f7d4b",
+        gold: "#c69e56",
+        ink: "#132117",
+        dusk: "#445345",
       },
       boxShadow: {
-        panel: "0 20px 60px rgba(21, 32, 24, 0.07)",
+        panel: "0 18px 50px rgba(19, 33, 23, 0.08)",
       },
     },
   },

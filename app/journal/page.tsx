@@ -8,7 +8,7 @@ import { insights } from "@/lib/site-content";
 export const metadata = {
   title: "Journal",
   description:
-    "Short ideas on reporting, KPI clarity, and operational visibility.",
+    "Short writing on bespoke systems, workflow design, and practical software for operators.",
 };
 
 export default function JournalPage() {
@@ -16,10 +16,10 @@ export default function JournalPage() {
     <>
       <PageHero
         eyebrow="Journal"
-        title="Short ideas on reporting, KPI clarity, and operational visibility."
-        description="The journal supports the public signal: practical analytics thinking, structured communication, and business-facing clarity."
+        title="Short thinking on bespoke systems, workflow design, and practical software."
+        description="The writing supports the same Tec4th signal: serious systems for real operators, explained in a clear and grounded way."
         primaryCta={{ href: "/contact", label: "Discuss an idea" }}
-        secondaryCta={{ href: "/services", label: "See work areas" }}
+        secondaryCta={{ href: "/services", label: "See system types" }}
       />
 
       <AnimatedSection className="section-space">
@@ -35,7 +35,7 @@ export default function JournalPage() {
                 href="/contact"
                 className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink"
               >
-                Continue the conversation <ArrowRight className="h-4 w-4" />
+                Start a conversation <ArrowRight className="h-4 w-4" />
               </Link>
             </article>
           ))}
@@ -43,8 +43,8 @@ export default function JournalPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Useful writing should strengthen the same core signal as the rest of the site."
-        description="Clear thinking, practical analytics, and reporting that makes business sense."
+        title="The writing should reinforce the build signal, not distract from it."
+        description="Clear software thinking, grounded business language, and a practical point of view."
         primary={{ href: "/contact", label: "Reach out" }}
         secondary={{ href: "/about", label: "Read the positioning" }}
       />

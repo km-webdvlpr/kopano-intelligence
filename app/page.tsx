@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Compass, GraduationCap, LineChart, Target } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Computer,
+  LayoutPanelTop,
+  ScrollText,
+  Workflow,
+} from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { CTASection } from "@/components/cta-section";
 import { PageHero } from "@/components/page-hero";
@@ -21,8 +28,8 @@ export default function HomePage() {
         eyebrow={brand.strapline}
         title={identity.title}
         description={identity.summary}
-        primaryCta={{ href: "/contact", label: "Discuss work or roles" }}
-        secondaryCta={{ href: "/case-studies", label: "See proof" }}
+        primaryCta={{ href: "/contact", label: "Discuss a system" }}
+        secondaryCta={{ href: "/case-studies", label: "See Bontle proof" }}
       >
         <div className="grid gap-4">
           {identity.proofPoints.map((item) => (
@@ -37,26 +44,26 @@ export default function HomePage() {
       <AnimatedSection className="section-space section-divider">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Core Strength"
-            title="One sharp through-line: turn messy data into clear business direction."
-            description="The site is not trying to present a big agency or a generic portfolio. It is built to show a focused operator who can improve reporting, clarify KPIs, and make performance more visible."
+            eyebrow="Core Offer"
+            title="Focused custom software for operators who need the system to actually fit the work."
+            description="Tec4th is not selling a generic SaaS dream. It builds bespoke systems that help real businesses run bookings, records, workflows, reporting, and admin with more structure and less friction."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {[
               {
-                icon: Compass,
-                title: "Business-first framing",
-                text: "The work starts with management questions, operating pressure, and what leaders actually need to see.",
+                icon: Workflow,
+                title: "Workflow systems",
+                text: "Turn informal business movement into visible, trackable workflow logic that teams can actually use.",
               },
               {
-                icon: LineChart,
-                title: "Reporting and dashboard craft",
-                text: "Strongest fit where reporting exists, but still feels too manual, unclear, or disconnected from decisions.",
+                icon: LayoutPanelTop,
+                title: "Admin and portal tools",
+                text: "Build focused interfaces for staff, records, requests, approvals, bookings, and day-to-day control.",
               },
               {
-                icon: Target,
-                title: "Useful signal, not analytics theatre",
-                text: "The goal is not more charts. The goal is better visibility, cleaner communication, and stronger judgment.",
+                icon: ScrollText,
+                title: "Reporting and oversight",
+                text: "Add management visibility so the owner or team can see what is happening without manual reporting chaos.",
               },
             ].map(({ icon: Icon, title, text }) => (
               <div key={title} className="panel p-8">
@@ -74,9 +81,9 @@ export default function HomePage() {
       <AnimatedSection className="section-space section-divider">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Where I Add Value"
-            title="A clear fit for reporting work, KPI clarity, and operational visibility."
-            description="The consulting signal stays, but the scope is tighter and more believable: a few strong areas executed well rather than too many broad promises."
+            eyebrow="Why Businesses Buy"
+            title="Most smaller operators do not need enterprise software. They need a better system than the one they are patching together now."
+            description="That middle ground is where Tec4th sits: more serious than spreadsheets, more tailored than generic tools, and more practical than a heavyweight software vendor process."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {focusAreas.map((item) => (
@@ -94,9 +101,9 @@ export default function HomePage() {
       <AnimatedSection className="section-space section-divider">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Work"
-            title="Three credible ways to work together."
-            description="This is enough to support project conversations and role conversations at the same time without making the site feel split or confused."
+            eyebrow="Systems"
+            title="Three focused build categories."
+            description="The offer stays disciplined: a few strong system types delivered well instead of a broad agency menu."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {services.map((service) => (
@@ -119,7 +126,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8">
             <Link href="/services" className="inline-flex items-center gap-2 text-sm font-semibold text-ink">
-              See work detail <ArrowRight className="h-4 w-4" />
+              Explore system types <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -129,14 +136,10 @@ export default function HomePage() {
         <div className="container-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <SectionHeading
-              eyebrow="Differentiation"
-              title="The learning-platform and programme angle remains a specialist edge, not the whole identity."
-              description="It gives the site a clear niche strength for future work while still keeping the broader signal useful for analyst, BI, reporting, and operations-facing roles."
+              eyebrow="Positioning"
+              title="African-grounded, commercially serious, and built for practical operators."
+              description="The brand direction is intentionally calm and bold at the same time: more distinct than a generic software house, but still credible to businesses that need real systems and real delivery."
             />
-            <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-olive/15 bg-[#f0f7ed] px-4 py-2 text-sm text-dusk">
-              <GraduationCap className="h-4 w-4 text-oliveDeep" />
-              Strong fit for learning platforms, services, and programme visibility work
-            </div>
           </div>
           <div className="grid gap-5">
             {reasons.map((reason) => (
@@ -156,14 +159,13 @@ export default function HomePage() {
           <div className="panel overflow-hidden">
             <div className="grid gap-8 p-8 lg:grid-cols-[1.1fr_0.9fr] lg:p-12">
               <div>
-                <p className="eyebrow">Featured Proof</p>
+                <p className="eyebrow">Flagship Proof</p>
                 <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)] sm:text-5xl">
-                  Bontle is still the cleanest example of operational thinking, KPI logic, and reporting design.
+                  Bontle proves the core Tec4th claim: a bespoke platform can be scoped, built, and shipped with real operational intelligence.
                 </h2>
                 <p className="mt-5 max-w-2xl text-dusk">
-                  It works here because it shows the quality of thinking: measurable flow,
-                  trusted KPIs, and reporting built for management use. That signal matters
-                  whether the next opportunity is a project, a contract, or a role.
+                  It is the clearest proof that workflow logic, reporting visibility,
+                  and modern full-stack execution can come together inside one focused product.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3 text-sm text-dusk">
                   {caseStudies[0].tags.map((tag) => (
@@ -174,7 +176,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="soft-panel p-7">
-                <p className="eyebrow">What It Signals</p>
+                <p className="eyebrow">What It Shows</p>
                 <ul className="mt-5 space-y-4 text-sm text-dusk">
                   {caseStudies[0].results.map((item) => (
                     <li key={item} className="flex gap-3">
@@ -193,8 +195,8 @@ export default function HomePage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Signal"
-            title="The site should make one impression quickly: this person can help us see clearly."
-            description="That applies whether the viewer is a recruiter, hiring manager, founder, or operator."
+            title="One impression matters most: this is someone who can actually build the system."
+            description="That signal should feel bold enough to be memorable and grounded enough to be trusted."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {testimonials.map((testimonial) => (
@@ -211,10 +213,10 @@ export default function HomePage() {
       </AnimatedSection>
 
       <CTASection
-        title="Open to reporting projects, contract work, and the right role."
-        description="If you need clearer reporting, stronger KPI logic, or a business-facing analyst who can work with messy reality, start the conversation there."
-        primary={{ href: "/contact", label: "Start a conversation" }}
-        secondary={{ href: "/about", label: "Read the positioning" }}
+        title="If the business has outgrown spreadsheets, scattered tools, or manual admin, that is the place to start."
+        description="Bring the workflow problem, the admin pain, or the reporting gap. Tec4th can scope the system from there."
+        primary={{ href: "/contact", label: "Start a build conversation" }}
+        secondary={{ href: "/about", label: "See the thinking" }}
       />
     </>
   );

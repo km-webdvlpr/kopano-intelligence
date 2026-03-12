@@ -7,7 +7,7 @@ import { brand } from "@/lib/site-content";
 export const metadata = {
   title: "Contact",
   description:
-    "Contact Kopano Intelligence to discuss a role, project, or contract opportunity.",
+    "Contact Tec4th to discuss a bespoke system, workflow tool, or reporting platform.",
 };
 
 export default function ContactPage() {
@@ -15,8 +15,8 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Discuss a role, project, or contract opportunity."
-        description="The site is meant to open practical conversations quickly. Start with the reporting problem, the role, or the context that matters most."
+        title="Start with the workflow problem, not the software jargon."
+        description="If the business has outgrown spreadsheets, chat-based operations, or fragmented admin tools, start there. Tec4th can scope the right system from the real operating pain."
         primaryCta={{ href: "#contact-form", label: "Send an enquiry" }}
         secondaryCta={{ href: `mailto:${brand.email}`, label: "Email directly" }}
       />
@@ -39,7 +39,7 @@ export default function ContactPage() {
               <p className="mt-3 text-dusk">
                 {brand.location}
                 <br />
-                Available for remote work, selective on-site sessions, and interviews.
+                Available for remote delivery and selective in-person discovery sessions.
               </p>
             </div>
             <div className="panel p-7">
@@ -48,10 +48,10 @@ export default function ContactPage() {
                 Good reasons to reach out
               </h2>
               <ul className="mt-3 space-y-2 text-dusk">
-                <li>Analyst, BI, or reporting role opportunities</li>
-                <li>Short-term reporting or dashboard projects</li>
-                <li>Contract support for KPI and visibility work</li>
-                <li>Learning or programme reporting needs</li>
+                <li>A business process is too manual</li>
+                <li>You need a custom admin or workflow system</li>
+                <li>You want reporting and oversight built into the platform</li>
+                <li>You need a bespoke tool that generic software does not fit</li>
               </ul>
             </div>
           </div>

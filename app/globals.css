@@ -11,15 +11,15 @@ html {
 }
 
 body {
-  @apply bg-white text-ink antialiased;
+  @apply bg-[#fcfcf7] text-ink antialiased;
   background-image:
-    radial-gradient(circle at top left, rgba(78, 120, 74, 0.12), transparent 26%),
-    radial-gradient(circle at 85% 12%, rgba(179, 135, 72, 0.08), transparent 20%),
-    linear-gradient(180deg, #ffffff 0%, #f7fbf6 100%);
+    radial-gradient(circle at top left, rgba(36, 98, 53, 0.13), transparent 24%),
+    radial-gradient(circle at 85% 12%, rgba(198, 158, 86, 0.08), transparent 18%),
+    linear-gradient(180deg, #fffef8 0%, #f6f8f0 100%);
 }
 
 ::selection {
-  background: rgba(78, 120, 74, 0.22);
+  background: rgba(36, 98, 53, 0.22);
 }
 
 .container-shell {
@@ -41,7 +41,7 @@ body {
   right: 0;
   bottom: -1px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(59, 101, 56, 0.22), transparent);
+  background: linear-gradient(90deg, transparent, rgba(36, 98, 53, 0.24), transparent);
 }
 
 .eyebrow {
@@ -49,15 +49,15 @@ body {
 }
 
 .panel {
-  @apply rounded-[28px] border border-olive/10 bg-white shadow-panel;
+  @apply rounded-[18px] border border-olive/15 bg-white shadow-panel;
 }
 
 .soft-panel {
-  @apply rounded-[24px] border border-olive/10 bg-[#f6fbf4];
+  @apply rounded-[16px] border border-olive/15 bg-[#f4f8ef];
 }
 
 .badge {
-  @apply rounded-full border border-olive/15 bg-[#eef6ea] px-4 py-2 text-sm text-dusk;
+  @apply rounded-full border border-olive/15 bg-[#eef5e7] px-4 py-2 text-sm text-dusk;
 }
 
 .primary-button {
@@ -65,7 +65,14 @@ body {
 }
 
 .secondary-button {
-  @apply inline-flex items-center gap-2 rounded-full border border-olive/15 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-olive/35 hover:bg-[#f3f8f1];
+  @apply inline-flex items-center gap-2 rounded-full border border-olive/15 bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-olive/35 hover:bg-[#f3f7ee];
+}
+
+.retro-grid {
+  background-image:
+    linear-gradient(rgba(36, 98, 53, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36, 98, 53, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
 .text-balance {

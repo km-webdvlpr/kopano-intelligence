@@ -4,20 +4,20 @@ import { PageHero } from "@/components/page-hero";
 import { audiences } from "@/lib/site-content";
 
 export const metadata = {
-  title: "Fit",
+  title: "Clients",
   description:
-    "Where the positioning is strongest: hiring teams, operators, and learning or programme environments.",
+    "Client fit across salons, service operators, learning businesses, and owner-led teams that need bespoke systems.",
 };
 
 export default function WhoItsForPage() {
   return (
     <>
       <PageHero
-        eyebrow="Fit"
-        title="Built to make sense to both hiring teams and potential clients."
-        description="The site works best when the viewer needs the same core capability: someone who can improve reporting, clarify KPIs, and turn complex operating data into something more useful."
-        primaryCta={{ href: "/contact", label: "Discuss fit" }}
-        secondaryCta={{ href: "/about", label: "Read the positioning" }}
+        eyebrow="Clients"
+        title="Built for operators who need custom systems, not software theatre."
+        description="Tec4th is most useful where the business is clearly real, the workflow is clearly messy, and the off-the-shelf options do not properly fit."
+        primaryCta={{ href: "/contact", label: "Discuss your operation" }}
+        secondaryCta={{ href: "/services", label: "See system types" }}
       />
 
       <AnimatedSection className="section-space">
@@ -35,7 +35,7 @@ export default function WhoItsForPage() {
                 <div className="grid gap-5 md:grid-cols-2">
                   <div className="soft-panel p-6">
                     <h3 className="text-lg font-semibold font-[var(--font-display)]">
-                      Typical gaps
+                      Typical pain points
                     </h3>
                     <ul className="mt-4 space-y-3 text-sm text-dusk">
                       {audience.painPoints.map((item) => (
@@ -45,7 +45,7 @@ export default function WhoItsForPage() {
                   </div>
                   <div className="soft-panel p-6">
                     <h3 className="text-lg font-semibold font-[var(--font-display)]">
-                      What the signal shows
+                      What the build improves
                     </h3>
                     <ul className="mt-4 space-y-3 text-sm text-dusk">
                       {audience.analyticsHelps.map((item) => (
@@ -61,10 +61,10 @@ export default function WhoItsForPage() {
       </AnimatedSection>
 
       <CTASection
-        title="The same strength should be legible from multiple angles."
-        description="Whether the viewer is hiring, buying a project, or exploring contract support, the site should still read as one person with one strong capability."
+        title="The best early clients are the ones already feeling the cost of manual operations."
+        description="If the current workflow is clearly straining the business, the system value is easier to see and easier to justify."
         primary={{ href: "/contact", label: "Start a conversation" }}
-        secondary={{ href: "/services", label: "See work areas" }}
+        secondary={{ href: "/case-studies", label: "See proof" }}
       />
     </>
   );

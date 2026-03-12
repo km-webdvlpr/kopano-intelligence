@@ -8,7 +8,7 @@ import { caseStudies } from "@/lib/site-content";
 export const metadata = {
   title: "Proof",
   description:
-    "Proof points for reporting, KPI design, and operational visibility work.",
+    "Bontle-led proof for bespoke business systems, workflow logic, and operational visibility.",
 };
 
 export default function CaseStudiesPage() {
@@ -18,10 +18,10 @@ export default function CaseStudiesPage() {
     <>
       <PageHero
         eyebrow="Proof"
-        title="The goal of the proof is simple: show strong thinking, useful structure, and credible execution."
-        description="The flagship example below matters because it demonstrates how reporting, KPI logic, and operational visibility can be designed with discipline."
-        primaryCta={{ href: "/contact", label: "Discuss a similar need" }}
-        secondaryCta={{ href: "/services", label: "See work areas" }}
+        title="The strongest proof is a shipped system with real operational logic."
+        description="Bontle matters because it demonstrates the thing Tec4th wants to be trusted for: bespoke system delivery that combines workflow control, reporting structure, and modern full-stack execution."
+        primaryCta={{ href: "/contact", label: "Discuss a similar build" }}
+        secondaryCta={{ href: "/services", label: "See system types" }}
       />
 
       <AnimatedSection className="section-space section-divider">
@@ -74,13 +74,13 @@ export default function CaseStudiesPage() {
         <div className="container-shell">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="eyebrow">Next Proof</p>
+              <p className="eyebrow">Future Proof</p>
               <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)]">
-                Ready to support future work examples without overclaiming today.
+                More operator-focused case studies can follow from this same model.
               </h2>
             </div>
             <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-ink">
-              Start a conversation <ArrowRight className="h-4 w-4" />
+              Start with your workflow <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -106,10 +106,10 @@ export default function CaseStudiesPage() {
       </AnimatedSection>
 
       <CTASection
-        title="Proof only matters if it helps the next person trust the work."
-        description="That trust can lead to a role, a project, or a contract. The standard stays the same."
-        primary={{ href: "/contact", label: "Discuss an opportunity" }}
-        secondary={{ href: "/about", label: "See the positioning" }}
+        title="The proof is strongest when the client can feel the business logic inside the system."
+        description="That is the standard: workflow fit, visibility, and practical usefulness."
+        primary={{ href: "/contact", label: "Discuss a bespoke build" }}
+        secondary={{ href: "/about", label: "Read the positioning" }}
       />
     </>
   );

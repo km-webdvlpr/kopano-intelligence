@@ -3,11 +3,11 @@
 import { FormEvent, useState } from "react";
 
 const enquiryTypes = [
-  "Role opportunity",
-  "Contract opportunity",
-  "Reporting or dashboard project",
-  "KPI review",
-  "Learning or programme visibility",
+  "Internal business system",
+  "Dashboard or reporting tool",
+  "Client or admin portal",
+  "Learning or programme platform",
+  "Workflow redesign and build",
 ];
 
 export function ContactForm() {
@@ -21,9 +21,9 @@ export function ContactForm() {
   return (
     <div id="contact-form" className="panel p-8 lg:p-10">
       <div className="max-w-2xl">
-        <p className="eyebrow">Conversation Starter</p>
+        <p className="eyebrow">Build Enquiry</p>
         <h2 className="mt-3 text-4xl font-semibold font-[var(--font-display)]">
-          Share the role, problem, or opportunity.
+          Describe the workflow, admin pain, or system gap.
         </h2>
         <p className="mt-4 text-dusk">
           This form is wired for local demo use. For production, connect it to
@@ -58,7 +58,7 @@ export function ContactForm() {
           />
         </label>
         <label className="grid gap-2 text-sm font-medium text-dusk">
-          Enquiry type
+          Project type
           <select className="rounded-2xl border border-olive/15 bg-white px-4 py-3 text-ink outline-none transition focus:border-olive">
             {enquiryTypes.map((item) => (
               <option key={item}>{item}</option>
@@ -66,12 +66,12 @@ export function ContactForm() {
           </select>
         </label>
         <label className="grid gap-2 text-sm font-medium text-dusk">
-          What should I know?
+          What needs to work better?
           <textarea
             required
             rows={6}
             className="rounded-2xl border border-olive/15 bg-white px-4 py-3 text-ink outline-none transition focus:border-olive"
-            placeholder="Describe the role, reporting issue, project need, or contract context."
+            placeholder="Describe the workflow, admin problem, reporting gap, or system you need."
           />
         </label>
         <button type="submit" className="primary-button w-fit justify-center">
@@ -79,7 +79,7 @@ export function ContactForm() {
         </button>
       </form>
       {submitted ? (
-        <div className="mt-5 rounded-2xl border border-olive/15 bg-[#eef6ea] px-4 py-3 text-sm text-dusk">
+        <div className="mt-5 rounded-2xl border border-olive/15 bg-[#eef5e7] px-4 py-3 text-sm text-dusk">
           Demo submission captured. For production, connect this form to email,
           Resend, Formspree, or a Next.js route handler.
         </div>

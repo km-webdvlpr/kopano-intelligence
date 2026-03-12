@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, IBM_Plex_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
@@ -12,7 +12,7 @@ const display = Cormorant_Garamond({
   weight: ["500", "600", "700"],
 });
 
-const body = Manrope({
+const body = IBM_Plex_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   weight: ["400", "500", "600", "700"],
@@ -24,19 +24,19 @@ export const metadata: Metadata = {
     template: `%s | ${brand.name}`,
   },
   description:
-    "Johannesburg-based business-facing data analyst focused on reporting, dashboards, KPI clarity, and operational visibility. Available for projects, contract work, and the right role.",
+    "Tec4th builds bespoke business systems, workflow tools, dashboards, and admin platforms for businesses that have outgrown spreadsheets.",
   metadataBase: new URL(brand.siteUrl),
   openGraph: {
     title: brand.name,
     description:
-      "Business-facing analytics for reporting, KPI clarity, and operational visibility.",
+      "Bespoke business systems without enterprise overhead.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: brand.name,
     description:
-      "A business-facing data analyst open to projects, contract work, and the right role.",
+      "Custom workflow, admin, and reporting systems for practical operators.",
   },
   icons: {
     icon: "/favicon.svg",
